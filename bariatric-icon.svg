@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130.347" height="130.347" viewBox="0 0 130.347 130.347">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 50 50">
+      <image width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAE5UlEQVRogdWaX4hVVRTGvz066mjZ6EyOoYaIExhmpRlooGAiRIRYlC+C5kPBKL1ENdCTD+NLf/Ah0iKipLKgSLB/L+mQodSUNclYyKSJg2Q6DunMOH+c+fWw1/GeuTPn3rm2943Wyzpnsfb37W/vc87eZ50jRTDgIGNbH/BwDM6KGKCSVmfEJ0taHoMwlpAB87XOTFJjTM5YQgbNT0nFhmJyxhLSbz4t5Jr5iTEIYwm5Yn5qKtZn/uYYhLGEdJqvScW6zN8SgzDKNEu6aL42FUuEpMUJmCZpqaQlkuZImiYJSeclHZP0jXPuaqR+FjbgHVs3GlKxhRb7084XAG8AlzPWnMS6gT3AgkKcsWak3Xya/JSkXkl1wIuSnpc0XdKwpBb50f9DUo/8vTVf0gOS7pL0tKTNQJOknc654Uj9HmnARhvNT/Pin+WN9rvAwiJYy4C9wLC1+QKYWqhNMAMWG+nvefFHUyK2l4j5IHDe2h4EJoXt9dikFcAlI52dir9msb03iFsPnDWM3eF6XJj0gBFutvMaoAfoB+b/C9x7gV7DXhuux9mEW42s2c432fnnAbCfNaw2INZaeJ2s2mZgGLgHeN3IG4q3Loo9EWg3vPUh+luM8CUjOwYct+Mg23hgm+EdCIFXjGwmcIaRVh0IuwYYxL+sRdm/5RPeB1w0EV3FW5SE3Wy46+LeKJKccz9ISl5vuwPDf2d+eXQhZpfN9wTGPW6+vlxCJpsPvYs9Z352uYRMMD9UMKt0S957ZvzfhZAclEtIslsNfWlVjDqIbMmb4oVIuJ3lEjLLfGghdQluuYQsMn8yMG6yi+4ol5A7zbcFxl1s/kRg3NEGVOELCEPArYGxk43o3SFxs8jWG9mRwLgzbHD6gapyXFqbzO8PjLtK/qnbEr3uBSy1UesD5gbGfstmeodUoK4FTJcfzSWSZsrvXNslHZV02Dl3Lautta+V9J78qO1xznWEkSABlZI22OknhRK3An+TbZeAfcCT+ApiZZrE7ovkVbQNXxYNZsATCXahpB2WNAi8D2wBHjdxLwMnMsR1mcBrqdiPwG0hRVgfjxj+tqyE5AnTDTxUAOgOYDuwHzhtohMbAFqABiB4SRZYZzydY840UAdcsKQtN0AwHf9IjPYkBCYAP1kfn8tKetUS4lclbtCAF6yPp4EpYyXMwtegAJb9B30savhidh++TjZ2hRFoNBGH8uIOWAs8ZTf8vLL0enT/6siVlXZlJVUApyzpkbz4B4y0YeBDAi9uRUTUAK3G30zqUZ+fuMaSzqZvVHsqga9JvWlPqOTyOwfcXwYRc1MiWoGaQslvW+LOVGwCufL9xlR8DvC1xXuBDWOjBhGxCugwrp8ptnMm9x0jfVmttthvgMvLryS3zxkCngks4CZ8zThZWL9kPCVR/FYD4Aqw2y6pjy3WVKBdI7nPYfsKTvv4BEzBL6LJLAwYx/jWJWASo2/qxLJ+jknaPobfmoBfaRtLEYT/PLACeIXcZzWAQ8Di4gg5u37ZACvld5T18j/F/CKpyTlHRtuk3e2Sdim3Gx2UdFjSt5J+lf/m3iWpSr7qUStpnqQVklbKf1dP7LD8V9uvShER1GxkPwKuZsxulp3Eb0ZLmoF8c8VTSjP8Rm6N/N8Mi+T/dKg2ri5Jf0k6I6lV0vfOudMheP8BxUDEUr0eMToAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <g id="Group_23142" data-name="Group 23142" transform="translate(-109.354)">
+    <g id="Ellipse_375" data-name="Ellipse 375" transform="translate(109.354)" fill="#01357e" stroke="#b3cde4" stroke-width="4">
+      <circle cx="65.174" cy="65.174" r="65.174" stroke="none"/>
+      <circle cx="65.174" cy="65.174" r="63.174" fill="none"/>
+    </g>
+    <rect id="icons8-kidney-64" width="64" height="64" transform="translate(143 35.79)" fill="url(#pattern)"/>
+  </g>
+</svg>

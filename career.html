@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | CARE Hospitals</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+  body{
+    background-color: rgb(246, 245, 245);
+  }
+  nav{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color:rgb(3, 182, 185);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    color: rgb(198, 213, 225);
+    position: sticky;
+    top: 0px;
+    
+  }
+  nav a{
+    text-decoration: none;
+    color:aliceblue ;
+  }
+  nav a:hover{
+   
+    text-decoration: underline;
+  }
+  .c{
+    width: 6%;
+  }
+  .con1{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    align-items: center;
+    position:sticky;
+    top: 35px;
+    background-color: white ;
+  }
+  .img{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+  }
+  .img img{
+    width: 100%;
+    height: 140%;
+  }
+  .mat{
+    width: 60%;
+    height: 5px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color:rgb(5, 5, 100);
+  }
+  .crimg{
+    position: relative;
+  width: 100%;
+  height: 404px; /* Adjust height accordingly */
+  background-image: url('./career-banner.webp');
+  background-size: cover;
+  background-position: center;
+  }
+  .crimgcon{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(12, 12, 12, 0.4), rgba(0, 0, 0, 0)); 
+  }
+
+  .bnr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+  }
+  .bnrcon1{
+    position: relative;
+    bottom: 219px;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: c;
+    gap: 10px;
+  }
+  .bnrcon2{
+    position: relative;
+    bottom: 225px;
+    left: 65px;
+width: 30%;
+gap: 20px;
+display: flex;
+flex-direction: column;
+  }
+  .cards{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    justify-content: space-evenly;
+    position: relative;
+    left: 80px;
+    top: 30px;
+   }
+   .card1{
+    width: 30%;
+    height: 64%;
+    background-color: white;
+  
+   }
+   .cdimg{
+    width: 100%;
+    height: 270px;
+   }
+   .cdimg img{
+    width: 100%;
+    height: 100%;
+   } 
+   .cdcon{
+    width: 100%;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    line-height: 28px;
+    height: 100%;
+   }
+   .card2{
+    width: 30%;
+    height: 64%;
+    background-color:white;
+   }
+   .cdimg2{
+    width: 100%;
+    height: 270px;
+   }
+   .cdimg2 img{
+    width: 100%;
+    height: 100%;
+   } 
+   .cdcon2{
+    width: 100%;
+    
+    position: relative;
+    left: 10px;
+    top: 20px;
+    line-height: 27px;
+   }
+   .card3{
+    width: 30%;
+    height: 79%;
+    background-color: white;
+   }
+   .cdimg3{
+    width: 100%;
+    height: 270px;
+   }
+   .cdimg3 img{
+    width: 100%;
+    height: 100%;
+   } 
+   .cdcon3{
+    width: 100%;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+   }
+   .yt1{
+    width: 90%;
+    display: flex;
+    position: relative;
+    left: 100px;
+    gap: 200px;
+    height: 50vh;
+    justify-content: space-around;
+   }
+    .ytcon1{
+    width: 40%;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   }
+   .yt1img{
+    width: 40%;
+    height: 50%;
+   }
+   .yt1 iframe{
+    width: 115%;
+    border-radius: 10px;
+   }
+   .ytcon1 div{
+    width: 100%;
+   }
+   .yt2{
+    width: 90%;
+    display: flex;
+    position: relative;
+    left: 100px;
+    gap: 200px;
+   }
+    .ytcon2{
+    width: 40%;
+    font-size: 19px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    left: 20px;
+   }
+   .yt2img{
+    width: 40%;
+    height: 50%;
+   }
+   .yt2 iframe{
+    width: 115%;
+    border-radius: 10px;
+   }
+   .ytcon2 div{
+    width: 100%;
+   }
+   .ig{
+    width: 100%;
+    height: 250px;
+    background: url('./banner-business-dev-e1642447415251[1].jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+   }
+   .igimg{
+    position: absolute;
+  top:50;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(12, 12, 12, 0.4), rgba(0, 0, 0, 0)); 
+  }
+
+   .loc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: px;
+    color: rgb(5, 5, 100);
+    background-color: white;
+   }
+   .footer{
+    height: 12vh;
+    background-color:rgb(222, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 19.4px;
+    gap: 500px;
+    color:rgb(3, 3, 81);
+   }
+   .footer footer{
+    padding-top: 25px;
+   }
+     .add{
+    display: flex;
+     justify-content:center;
+     gap: 100px; 
+     height: 91vh;
+      padding-top: 30px;
+       font-size: 18px; 
+      background-color:rgb(221, 220, 220);
+      
+   }
+   .add div , a{
+    color:rgb(3, 3, 73);
+   }
+
+</style>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./international.html">International Patients</a>
+          <a href="./payment.html">Pay Online</a>
+          <a href="" onclick="fun()" class="menu">Online Lab Reports
+            <div class="submenu" style="display: none;">
+            <span>Banjara Hills,Hyderbad</span>
+            <span>OPD Banjara Hills,Hyderbad</span>
+            <span>HITEC City, Hyderabad</span>
+            <span>OPD HITEC City, Hyderabad</span>
+            <span>Musheerabad, Hyderabad</span>
+            <span>Nampally, Hyderabad</span>
+            <span>Malakpet, Hyderabad</span>
+            <span>Bhubaneswar</span>
+            <span>Raipur</span>
+            <span>Health City, Visakhapatnam</span>
+            <span>ramnagar, Visakhapatnam</span>
+            <span>Nagpur</span>
+            <span>Indore</span>
+            <span>Chh. Sambhajinagar</span>
+            <span>CARE multi-speciality Clinic,Srinagar Colony</span>
+            <span>CARE Medical Center,Tolichowi,Hyderabad</span>
+            </div>
+          </a>
+          <a href="./career.html">Careers</a>
+          <a href="./enquiry.html">Enquiry Now</a>
+          <a href="./feedback.html">Feedback</a>
+          <a href=""><i class="fa-solid fa-phone"></i>+91-40 6165 6565</a>
+          <select name="" id="" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+              <option value="">English</option>
+              <option value="">Bengali</option>
+              <option value="">Hindi</option>
+              <option value="">Kannada</option>
+              <option value="">Marati</option>
+              <option value="">Tamil</option>
+              <option value="">Telugu</option>
+              <option value="">Arabic</option>
+              <option value="">Somali</option>
+              <option value="">Malayalam</option>
+              <option value="">Urdu</option>
+          </select>
+          <select name="" id="" class="c" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+              <option value="" selected>Hospitals</option>
+              <option value="">CARE Hospital,Banjara Hills,Hyderabad</option>
+              <option value="">CARE Hospital Outpatient Center,Banjara Hills,Hyderabad</option>
+              <option value="">CARE Hospital,Hitech City,Hyderabad</option>
+              <option value="">CARE Hospital Outpatient Center,Hitech City,Hyderabad</option>
+              <option value="">Gurunanak CARE Hospitals</option>
+              <option value="">CARE Hospitals, Nampally, Hyderabad                </option>
+              <option value="">CARE Hospitals, Malakpet, Hyderabad         </option>
+              <option value="">CARE Hospitals, Bhubaneswar                </option>
+              <option value="">Ramkrishna CARE Hospitals, Raipur                </option>
+              <option value="">CARE Hospitals, Ramnagar, Visakhapatnam                </option>
+              <option value="">CARE Hospitals, Health City, Arilova                </option>
+              <option value="">Ganga CARE Hospital Limited, Nagpur                </option>
+              <option value="">CARE CHL Hospitals, Indore                </option>
+              <option value="">CARE CIIGMA Hospitals, Chh. Sambhajinagar</option>
+          </select>
+      </nav>
+      <head>
+          <div class="con1">
+              <div class="img">
+                  <a href="./index.html"><img src="./cares-logo.webp" alt=""></a>
+              </div>
+              <div class="mat">
+                <div style="font-size: 19px; display: flex; gap: 10px;">
+                  <div><i class="fa-solid fa-user-doctor"></i></div>
+                    <div>Doctors</div>
+                  </div>
+                  <div style="font-size: 19px; display: flex; align-items: center; justify-content: center; gap: 10px;" >
+                <div><i class="fa-solid fa-stethoscope" ></i></div>
+                 <div> Specialities& <br> Treatments</div>
+                 </div>
+                  <div  style="font-size: 19px; display: flex; align-items: center; gap: 10px; justify-content: center;  ">
+                    <div><i class="fa-regular fa-hospital"></i></div>
+                     <div class="m1">Hospitals& <br> Directions</div>
+                     </div>
+                  <div style="font-size: 19px; display: flex; gap: 10px; align-items: center; border: 1px solid red; padding: 5px 10px; background-color: rgb(6, 6, 106); color: white; border: none; border-radius: 5px;">
+                    <div><i class="fa-solid fa-calendar-days" ></i></div>
+                     <div>Book an <br> Appointment</div>
+                     </div>
+                  <div style="font-size: 19px; display: flex; gap: 10px;">
+                    <div><i class="fa-solid fa-address-book"></i></div>
+                    <div>Contact Us</div>
+                    </div>
+              </div>
+          </div>
+      </head>
+ <div class="crimg">
+    <div class="crimgcon"></div>
+ </div>
+ <div class="bnr">
+    <div class="bnrcon1">
+        <h1 style="font-size:60px; color: rgb(21, 8, 77); font-weight: 100; color: white;">Join us in our mission to <br> save lives</h1>
+        <p style="color: rgb(10, 6, 60); font-size: 25px; color: white; padding-bottom: 15px;">Want to work with us?</p>
+        <button style="background-color: rgb(22, 162, 174); padding: 10px 20px; border: none; width: 25%; color: white;font-size: 17px; border-radius: 5px;">Apply Now</button> 
+    </div>
+    <div class="bnrcon2">
+        <div class="con2mat" style="display: flex; justify-content:center; gap: 150px; border: 1px solid darkblue; padding: 10px 5px; background-color:white; border-radius: 5px;" >
+        <div style="font-size: 19px; display: flex; flex-direction: column; gap: 10px;"><div>Already applied? </div> <div>Track your job status </div></div> 
+        <div style="padding: 10px 35px; height: 20px; background-color: rgb(22, 162, 174); border: none; color: aliceblue; border-radius: 5px; font-size: 17px;">Sign In</div>
+        </div>
+        <div class="con2mat2" style="display: flex; justify-content:center ; gap: 90px;  border: 1px solid darkblue; padding: 10px 5px; background-color: white; border-radius: 5px;">
+        <div style="display: flex; flex-direction: column; gap: 5px; font-size: 19px;"><div>Get started and be the part of</div> <div> our database for all openings </div></div>
+        <div style="padding: 10px 30px; height: 20px; text-align: center; ; background-color: rgb(22, 162, 174); border: none; color: aliceblue; border-radius: 5px; font-size: 17px;">Register</div>
+        </div>
+    </div>
+ </div>
+ <div class="cards">
+    <div class="card1">
+      <div class="cdimg">
+      <img src="./vision.webp" alt="">
+      </div>
+      <div class="cdcon">
+      <h3 style="font-size: 25px; color: rgb(9, 9, 122); font-weight: 100; padding-bottom: 15px;">Vision</h3>
+      <p style="font-size: 20px; color: grey;">To be a trusted, people-centric integrated healthcare system as a model for global <br> healthcare      </p>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="cdimg2">
+      <img src="./mission.webp" alt="">
+      </div>
+      <div class="cdcon2">
+      <h3 style="font-size: 25px; color: rgb(9, 9, 122); font-weight: 100; padding-bottom: 15px;">Mission</h3>
+      <p style="font-size: 20px; color: grey;">
+        To provide the best and cost-effective care, accessible to every patient through integrated clinical practice, education and research.</p>
+      </div>
+    </div>
+    <div class="card3">
+      <div class="cdimg3">
+      <img src="./values.webp" alt="">
+      </div>
+      <div class="cdcon3">
+      <h3 style="font-size: 25px; color: rgb(9, 9, 122); font-weight: 100; padding-bottom: 15px;">Values</h3>
+      <p style="font-size: 20px; ">
+    <div style="font-size: 20px; color: grey;">Transparency</div>
+    <div style="font-size: 20px; color: grey;">Teamwork</div>
+    <div style="font-size: 20px; color: grey;">Empathy & Compassion    </div>
+    <div style="font-size: 20px; color: grey;">Excellence    </div>
+    <div style="font-size: 20px; color: grey;">Education    </div>
+    <div style="font-size: 20px; color: grey;">Equity    </div>
+    <div style="font-size: 20px; color: grey;">Mutual Trust & Respect    </div>
+</p>
+
+      </div>
+    </div>
+    </div>
+    <h1 style="height: 15vh; text-align: center; font-size: 45px; color: rgb(9, 9, 123); font-weight: 100;">Videos</h1>
+    <div class="yt1">
+        <div class="yt1img">
+                <iframe width="650" height="300" src="https://www.youtube.com/embed/eI7cxdeJvQ0?si=nV12cciGaFhPeLBS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="ytcon1">
+        <div style="color: grey;">CARE Hospital is a people-centric organization where every employee is important to us. We strongly believe that only a happy employee can make a patient happy. We at CARE Hospital provide several appropriate opportunities for the growth and development of everybody.</div>
+        <i class="fa-solid fa-circle-arrow-right" style="color: rgb(22, 162, 174);"><a href="" style="font-size: 13px; text-decoration: none; color: rgb(22, 162, 174);">Watch Video</a></i>
+        </div>
+    </div>
+    <div class="yt2">
+        <div class="ytcon2">
+        <div style="color: grey;">CARE Hospital is a people-centric organization where every employee is important to us. We strongly believe that only a happy employee can make a patient happy. We at CARE Hospital provide several appropriate opportunities for the growth and development of everybody.</div>
+     <div> <i class="fa-solid fa-circle-arrow-right" style="color: rgb(22, 162, 174);"><a href="" style="font-size: 13px; text-decoration: none; color: rgb(22, 162, 174);">Watch Video</a></i> </div>
+        </div>
+        <div class="yt2img">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f2fw0cElGm4?si=w5MShDjui9xyBqrd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="mm" style="height: 10vh;">
+
+    </div>
+    <div class="ig">
+      <div class="igimg"> </div>
+      </div>
+   <div class="igcon" style="display: flex; align-items: center; position: relative; bottom: 160px; justify-content: space-around; gap: 250px;">
+    <div>
+    <h2 style="font-size: 50px; font-weight: 100; padding-left: px; color: white;">Open Positions</h2>
+    <p style="font-size: 22px; padding-left: px; color: white;">An exciting career opportunity in healthcare awaits you at one of the leading hospital group in India.</p>
+    </div>
+    <div>
+      <div style="padding: 10px 30px; border: 1px solid white; color: white; border-radius: 5px; border-color:white; background-color: rgb(3, 182, 185); font-size: 20px;">Apply Now</div>
+    </div>
+   </div>
+    </div>
+    <div class="ah" style="display: flex; gap: 50px; justify-content: center; width: 85%; position: relative; left: 90px;">
+        <div style="font-size: 20px; color:rgb(9, 9, 135) ; "><div style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-arrow-right"></i> <div style="font-size: 25px;">Perks & Benefits</div></div> 
+            <div style="padding-top: 20px; font-size: 20px; color: rgb(99, 97, 97);">At CARE Hospitals, we believe in taking care of our associates, be it health insurance or hostel facility, we leave no stone unturned to ensure that our associates are given the best! All our associates are entitled to health insurance and provident fund, Free OP Consultation, discounts on surgeries are provided to self and family; Bachelor accommodation, Food, Pick up & drop facility to the hostel is provided for all our nursing associates and ESI Facility for eligible associates.            </div>
+        </div>
+        <div style="font-size: 20px; color:rgb(9, 9, 135) ; "><div style="display: flex;  gap: 10px;"><i class="fa-solid fa-arrow-right" style="position: relative; top: 6px;"></i><div style="font-size: 25px;">Relax, we’ve got you covered</div></div>  
+            <div style="padding-top: 20px; font-size: 20px; color: rgb(99, 97, 97)">We at CARE believe that a healthy mind and a healthy body goes a long way in ensuring a healthy soul! We ensure that all our associates are at the top of their health through regular health checks and follow-ups. We also ensure that all illnesses are covered through comprehensive insurance and of course, through CARE’s innovative policies on OP and IP consultation.            </div> 
+        </div>
+        <div style="font-size: 20px; color:rgb(9, 9, 135) ; "><div style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-arrow-right"></i><div style="font-size: 25px;">Fun @ Work</div> </div>
+            <div style="padding-top: 20px; font-size: 20px; color: rgb(99, 97, 97)">All work and no play make jack a dull boy! We @ CARE take this maxim very seriously and that is why, we have a plethora of programs to ensure that there is a right balance of work and fun for enhanced healthy living and work-life balance. Our associate celebrations like birthdays, work anniversaries, festival celebrations and momentous day celebrations ensure that we celebrate our associate moments with CARE.            </div>
+        </div>
+        <div style="font-size: 20px; color:rgb(9, 9, 135) ; "><div style="display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-arrow-right"></i> <div style="font-size: 25px;">Stay informed</div> </div>
+            <div style="padding-top: 20px; font-size:20px; color: rgb(99, 97, 97)">Information should be at all our fingertips, especially in the digital age. All our associate communication channels ensure that the right information flows at the right time to the right person. Be it our Townhall meetings, “Coffee with HCOO” meeting, associate focus group discussions or new joiner meetings, the leadership takes it in it’s stride to share the key aspects of our business across the entire organisation.            </div>
+        </div>
+    </div>
+    <h1 style="font-size: 45px; text-align: center; padding-top: 40px; height: 10vh; color: grey; font-weight: 100; padding-bottom: 20px;">Where Do you Want to Work?</h1>
+    <button style="padding: 13px 30px; position: relative; left: 700px; background-color: rgb(22, 162, 174); color: white; border: none; font-size: 17px; border-radius: 5px;">Explore all jobs</button>
+    <div class="ff" style="height: 7vh;">
+        
+    </div>
+    <div class="ddd" style="height: 1vh; background: url(./1.webp); padding-bottom: px;">
+
+    </div>
+   
+    <div class="add">
+      <div style="display: flex; flex-direction: column; gap: 6px; position: relative; top: 25px;"> <div style="font-size: 22px; padding-bottom: 30px; text-decoration: none;">Registered Office </div>
+          <span>Quality CARE India Limited</span>
+          <span>#6-3-248/2, Road No.1,</span>
+          <span>Banjara Hills, Hyderabad-500034,                </span>
+          <span>Telangana, India.                </span>
+          <span>CIN: U85110TG1992PLC014728                </span>
+          <span>+91-40-68106529                </span>
+          <span>Doctor Enquiry: +91-40-68106529</span>
+          <span style="display: flex; gap: 20px; font-size: 35px; padding-top: 15px;"><a href="https://www.youtube.com/c/CAREHospitalsIndia"><i class="fa-brands fa-youtube" style="color: red;"></i></a><a href="https://www.facebook.com/carehospitalsindia"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+            <a href="https://www.instagram.com/care.hospitals/"><i class="fa-brands fa-instagram" style="color: darkmagenta;"></i></a>  <a href="https://www.linkedin.com/company/care-quality-care-india-limited" style="color: white;"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></span>
+      </div>
+      <hr style="border-color:white;width: 1px; color: white; background-color: white; position: relative; right: 30px; top: 25px; height: 90%; border: none;">
+      <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 100px; top: 25px;"> <div style="font-size: 23px; padding-bottom: px;">Know Us</div> <hr style="width: 37%; border-color: black; position: relative; bottom: 12px;">
+        <span>Hospitals & Directions</span>
+        <span>Specialities & Treatments</span>
+        <span>Our Doctors</span>
+        <span>International Patient Services</span>
+        <span>News & Media</span>
+        <span>About Us</span>
+        <span>Awards</span>
+        <span>Careers</span>
+        <span><b style="text-decoration: underline;">TARIFF</b></span>
+        <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67); background-color: white; position: relative; top: 2px; border-radius: 5px; font-size: 15px;">Stent Pricing</button></span> 
+        <button style="position: relative; left:110px; bottom: 45px; padding: 10px 3px; border: none; color: rgb(4, 4, 67); background-color:white; width: 45%; border-radius: 5px; font-size: 15px;">Implant Pricing</button>
+        <span><b style="text-decoration: underline; position: relative; bottom: 40px;">ESG & Sustainability</b></span>
+        <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 40px;">ESG Materiality Survey              </button></span>
+        <span><b style="text-decoration: underline; position: relative; bottom: 30px;">EPIHC</b></span>
+        <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 30px;">Ethical Principles in Health Care              </button></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 50px; top: 25px;"> <div style="font-size: 23px;">Actions </div> <hr style="width: 40%; border-color: black; position: relative; bottom: 12px;">
+          <span>Contact Us</span>
+          <span>Book an Appointment</span>
+          <span>Pay Online</span>
+          <span>Feedback</span>
+          <span>Lab Reports</span>
+          <span>Video Consultation</span>
+          <span>Stroke Risk Assessment</span>
+          <span>Blogs</span>
+          <span>Medical Information</span>
+          <span>Symptoms</span>
+          <span>Diagnostics</span>
+          <span>Diseases & Conditions</span>
+          <span>Surgery Cost</span>
+          <span>Animated Health Guide</span>
+          <span>Web Stories</span>
+          <span>Health Package</span>
+          <span>Second Opinion</span>
+          <span>Care Samvaad (Podcast)</span>
+        </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;color: darkblue; position: relative; top: 25px;"><div style="font-size: 23px; padding-bottom: px;">Centres of Excellence</div> <hr style="width: 70%; border-color: black; position: relative; bottom: 10px;">
+        <a href="./cardic.html" style="text-decoration: none;">Cardiac Sciences</a>
+        <a href="./gastro.html" style="text-decoration: none;">Gastro Sciences</a>
+        <a href="./nephrology.html" style="text-decoration: none;">Nephrology</a>
+        <a href="./neuro.html" style="text-decoration: none;">Neurosciences</a>
+        <a href="./oncology.html" style="text-decoration: none;">Oncology</a>
+        <a href="./orthopeadics.html" style="text-decoration: none;">Orthopaedics</a>
+        <a href="./peadatrics.html" style="text-decoration: none;">Paediatrics</a>
+        <a href="./pulmonology.html" style="text-decoration: none;">Pulmonology</a>
+        <a href="./robot.html" style="text-decoration: none;">Robot-Assisted Surgery</a>
+        <a href="./transplant.html" style="text-decoration: none;">Transplants</a>
+        <a href="./urology.html" style="text-decoration: none;">Urology</a>
+        <a href="./vascular.html" style="text-decoration: none;">Vascular & Endovascular Surgery and <br> Interventional Radiology</a>
+        <a href="./woman.html" style="text-decoration: none;">Woman& Child Institute </a>
+      </div>
+  </div>
+        <div class="loc">
+          <div>Hyderabad</div>
+          <div>|</div>
+          <div>Raipur</div>
+          <div>|</div>
+          <div>Bhubaneswar</div>
+          <div>|</div>
+          <div>Visakhapatnam</div>
+          <div>|</div>
+          <div>Nagpur</div>
+          <div>|</div>
+          <div>Indore</div>
+          <div>|</div>
+          <div>Chh.Sambhajinagar</div>
+        </div>
+        <div class="footer">
+          <footer>Copyright © CARE Hospitals - All Rights Reserved</footer>
+          <footer>Feedback . Privacy policy . Grievance</footer>
+        </div>
+</body>
+</html>

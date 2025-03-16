@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Children's/Paediatrics Hyd</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+  body{
+    background-color: rgb(246, 245, 245);
+  }
+  nav{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color: rgb(3, 182, 185);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    color: rgb(198, 213, 225);
+    position: sticky;
+    top: 0px;
+  }
+  nav a{
+    text-decoration: none;
+    color:aliceblue ;
+  }
+  nav a:hover{
+   
+    text-decoration: underline;
+  }
+
+  .c{
+    width: 6%;
+  }
+  .con1{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    align-items: center;
+    position:fixed;
+    top: 35px;
+    background-color:white;
+  }
+  .img{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+    font-size: 30px;
+  }
+  .img img{
+    width: 100%;
+    height: 140%;
+  }
+  .mat{
+    width: 60%;
+    height: 5px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color:rgb(4, 4, 114);
+  }
+  header{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 49vh;
+    padding: 5px 0px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    left: 80px;
+    padding-bottom: 40px;
+    gap: 580px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 2px grey;
+  }
+  .cdimg{
+    width: 45%;
+    position: relative;
+    left: 210px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .input{
+    width: 50%;
+    border: 1px solid rgb(181, 180, 180);
+    padding: 13px 0px;
+    border-radius: 10px;
+    position: relative;
+    right: 40px;
+    top: 20px;
+  }
+  .h2{
+    width: 100%;
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    bottom: 13px;
+  }
+  h2{
+    width: 49.9%;
+    border: 0.1px solid cadetblue;
+    border-top: none;
+    background-color: rgb(22, 185, 190);
+    color: aliceblue;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-weight: 100;   
+  }
+  .input-field{
+    width: 80%;
+    position: relative;
+    left:10px;
+    bottom: 10px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input-field label{
+  position: absolute;
+top: 70%;
+left: 20px;
+transform: translateY(-10%);
+transition: 0.15s ease;
+pointer-events: none;
+font-size: 18px;
+}
+.input-field input{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+position: relative;
+top: 15px;
+right: 15px;
+}
+.input-field1{
+    width: 100%;
+    position: relative;
+    top: 3px;
+    padding: px 30px;
+    padding-bottom: 10px;
+    margin: 15px opx;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+.input-field1 div{
+  position: absolute;
+top:60%;
+left: 30px;
+transform: translateY(-10%);
+transition: 0.15s all ease;
+pointer-events: none;
+font-size: 18px;
+width: 50%;
+}
+.input-field1 textarea{
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  position: relative;
+  top: 20px;
+  left: 25px;
+
+}
+.input-field2{
+    width: 80%;
+    position: relative;
+    left:10px;
+    top: 20px;
+    padding: 10px 30px;
+    margin: 15px opx;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input-field2 span{
+  position: absolute;
+top: 55%;
+left: 20px;
+transform: translateY(-10%);
+transition: 0.15s ease;
+pointer-events: none;
+font-size: 18px;
+}
+.input-field2 input{
+  width: 60%;
+  height: 20px;
+  font-size: 16px;
+position: relative;
+top: 15px;
+right: 15px;
+
+}
+input,textarea{
+      
+    border-top: none; border-left: none; border-right: none;
+    background-color: transparent;
+  
+  }
+  .input-field input:focus~label,
+    .input-field input:valid~label{
+        font-size: 0.8rem;
+        top: 25px;
+        transform: translateY(-120%);
+        color: rgb(9, 9, 141);
+    }
+    .input-field1 textarea:focus~div,
+    .input-field1 textarea:valid~label{
+        font-size: 0.8rem;
+        top: 25px;
+        transform: translateY(-120%);
+        color: rgb(9, 9, 141);
+    }
+    .input-field2 input:focus~span,
+    .input-field2 input:valid~label{
+        font-size: 0.8rem;
+        top: 25px;
+        transform: translateY(-120%);
+        color: rgb(9, 9, 141);
+    }
+  .mm{
+    height: 17vh;
+  }
+  .logo{
+    display: flex;
+    width: 30%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    gap: 10px;
+  }
+  section{
+    height: 55vh;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .p1{
+    font-size: 19px;
+    width: 90%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    color:rgb(1, 1, 57);
+  }
+  .p2{
+    font-size: 19px;
+    width: 90%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    color:rgb(1, 1, 57);
+  }
+  .p3{
+    font-size: 19px;
+    width: 90%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    color:rgb(1, 1, 57);
+  }
+  .p4{
+    font-size: 20px;
+    width: 90%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    line-height: 30px;
+  }
+  .p5{
+    font-size: 20px;
+    width: 90%;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    line-height: 30px;  
+  }
+  ul{
+    padding-left: 80px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 100vh;
+    color:rgb(1, 1, 57);
+  }
+  .cp{
+   display: flex;
+   font-size: 18px;
+   width: 90%;
+   flex-wrap: wrap;
+   position: relative;
+   left: 70px;
+   line-height: 10px;
+   background-color: white;
+   padding: 10px 20px;
+   padding-bottom: 70px;
+   box-shadow: 2px 0px 3px 3px grey;
+  }
+  .cp div{
+   width: 25%;
+   height: 50px;
+   position: relative;
+    top: 50px;
+    left: 50px;
+    color: rgb(3, 3, 58);
+  }
+  .cp div:hover{
+ cursor: pointer;
+ color: rgb(22, 185, 190);
+}
+  .po {
+   font-size: 20px;
+    text-align: center; 
+    text-indent: 100px;
+     height: 100%;
+     width: 92%;
+     padding-bottom: 40px;
+     color: rgb(5, 5, 69);
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    background-color: white;
+    position: relative;
+     box-shadow: 0px 1px 3px 0.1px rgb(38, 66, 75);
+    padding: 3px 0px;
+   }
+   .nav a{
+    color: rgb(20, 7, 74);
+    text-decoration: none;
+    font-size: 19px;
+    padding: 20px 20px;
+   }
+   .nav a:hover{
+    background-color:rgb(22, 185, 190);
+    color: aliceblue;
+  }
+  .add{
+   display: flex;
+    justify-content: center; 
+    gap: 100px;
+    height: 91vh;
+     padding-top: 30px; 
+     font-size: 18px; 
+     background-color:rgb(221, 220, 220);
+     
+  }
+  .add div , a{
+   color:rgb(3, 3, 73);
+  }
+   .loc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(5, 5, 100);
+    background-color: white;
+   }
+   .footer{
+    height: 12vh;
+    background-color: rgb(222, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 19.4px;
+    gap: 500px;
+    color: rgb(3, 3, 73);
+   }
+   .footer footer{
+    padding-top: 25px;
+   }
+</style>
+<body>
+    <nav>
+      <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./international.html">International Patients</a>
+        <a href="./payment.html">Pay Online</a>
+        <a href="" onclick="fun()" class="menu">Online Lab Reports
+          <div class="submenu" style="display: none;">
+          <span>Banjara Hills,Hyderbad</span>
+          <span>OPD Banjara Hills,Hyderbad</span>
+          <span>HITEC City, Hyderabad</span>
+          <span>OPD HITEC City, Hyderabad</span>
+          <span>Musheerabad, Hyderabad</span>
+          <span>Nampally, Hyderabad</span>
+          <span>Malakpet, Hyderabad</span>
+          <span>Bhubaneswar</span>
+          <span>Raipur</span>
+          <span>Health City, Visakhapatnam</span>
+          <span>ramnagar, Visakhapatnam</span>
+          <span>Nagpur</span>
+          <span>Indore</span>
+          <span>Chh. Sambhajinagar</span>
+          <span>CARE multi-speciality Clinic,Srinagar Colony</span>
+          <span>CARE Medical Center,Tolichowi,Hyderabad</span>
+          </div>
+        </a>
+        <a href="./career.html">Careers</a>
+        <a href="./enquiry.html">Enquiry Now</a>
+        <a href="./feedback.html">Feedback</a>
+        <a href=""><i class="fa-solid fa-phone"></i>+91-40 6165 6565</a>
+        <select name="" id="" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+            <option value="">English</option>
+            <option value="">Bengali</option>
+            <option value="">Hindi</option>
+            <option value="">Kannada</option>
+            <option value="">Marati</option>
+            <option value="">Tamil</option>
+            <option value="">Telugu</option>
+            <option value="">Arabic</option>
+            <option value="">Somali</option>
+            <option value="">Malayalam</option>
+            <option value="">Urdu</option>
+        </select>
+        <select name="" id="" class="c" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+            <option value="" selected>Hospitals</option>
+            <option value="">CARE Hospital,Banjara Hills,Hyderabad</option>
+            <option value="">CARE Hospital Outpatient Center,Banjara Hills,Hyderabad</option>
+            <option value="">CARE Hospital,Hitech City,Hyderabad</option>
+            <option value="">CARE Hospital Outpatient Center,Hitech City,Hyderabad</option>
+            <option value="">Gurunanak CARE Hospitals</option>
+            <option value="">CARE Hospitals, Nampally, Hyderabad                </option>
+            <option value="">CARE Hospitals, Malakpet, Hyderabad         </option>
+            <option value="">CARE Hospitals, Bhubaneswar                </option>
+            <option value="">Ramkrishna CARE Hospitals, Raipur                </option>
+            <option value="">CARE Hospitals, Ramnagar, Visakhapatnam                </option>
+            <option value="">CARE Hospitals, Health City, Arilova                </option>
+            <option value="">Ganga CARE Hospital Limited, Nagpur                </option>
+            <option value="">CARE CHL Hospitals, Indore                </option>
+            <option value="">CARE CIIGMA Hospitals, Chh. Sambhajinagar</option>
+        </select>
+    </nav>
+    <head>
+        <div class="con1">
+            <div class="img">
+                <a href="./index.html"><img src="./cares-logo.webp" alt=""></a>
+            </div>
+            <div class="mat">
+              <div style="font-size: 19px; display: flex; gap: 10px;">
+                <div><i class="fa-solid fa-user-doctor"></i></div>
+                  <div>Doctors</div>
+                </div>
+                <div style="font-size: 19px; display: flex; align-items: center; justify-content: center; gap: 10px;" >
+              <div><i class="fa-solid fa-stethoscope" ></i></div>
+               <div> Specialities& <br> Treatments</div>
+               </div>
+                <div  style="font-size: 19px; display: flex; align-items: center; gap: 10px; justify-content: center;  ">
+                  <div><i class="fa-regular fa-hospital"></i></div>
+                   <div class="m1">Hospitals& <br> Directions</div>
+                   </div>
+                <div style="font-size: 19px; display: flex; gap: 10px; align-items: center; border: 1px solid red; padding: 5px 10px; background-color: rgb(6, 6, 106); color: white; border: none; border-radius: 5px;">
+                  <div><i class="fa-solid fa-calendar-days" ></i></div>
+                   <div>Book an <br> Appointment</div>
+                   </div>
+                <div style="font-size: 19px; display: flex; gap: 10px;">
+                  <div><i class="fa-solid fa-address-book"></i></div>
+                  <div>Contact Us</div>
+                  </div>
+
+            </div>
+        </div>
+    </head>
+    <header>
+        <div class="cdimg">
+            <img src="./pediatrics-07.webp" alt="" style="width:30%;">
+
+            <h1 style="text-align: center; font-size: 45px; color:rgb(5, 5, 102); font-weight: 200;position: relative; left: 10px;">Paediatrics</h1>
+        </div>
+        <div class="input">
+            <div class="h2">
+            <h2 style="    border-top-left-radius: 9px;"><div style="position: relative; top: 10px;">India</div></h2> 
+            <h2 style="border-top-right-radius: 9px; background-color:transparent;border-color: rgb(121, 120, 120);"><div style="position: relative; top: 10px; color: rgb(4, 4, 67);">Other Countries</div></h2>
+            </div>
+            <div class="input-field">
+              <input type="text" required style="width: 110%;">
+              <label>Name*</label>
+              </div>
+              <div class="input-field1">
+               <textarea name="" id="" style="width: 90%;"></textarea>
+               <div>Type your Query</div>
+              </div>
+              <div class="input-field2">
+               <input type="text" style="width: 110%;">
+               <span for="">Phone Number*</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;"> <span style="position: relative; bottom: 100px;"></span> <button style="padding: 5px 10px; border-radius: 5px; position: relative;bottom: 7px; right: 25px; background-color: rgb(185, 183, 183); color:white;border: none;">Get OTP</button> </div>
+           
+           <div style="padding-top: 20px;padding-left: 30px;"><i class="fa-solid fa-square-check" style="color:rgb(64, 64, 228); position: relative; bottom: 3.5px;"></i><u style="font-size: 14px; text-decoration: none; position: relative; left: 5px; bottom: 5px;">I agree with the Terms & Conditions and Privacy Policy of <br> CARE Hospital’s website.</u></div>
+           <footer style="font-size: 12px; padding-top: 10px; padding-bottom: 20px; position: relative; left: 30px;">* By submitting this form, you consent to receive communication from <br> CARE Hospitals via call, WhatsApp, email, and SMS.</footer>
+           <div class="bt"><button style="position: relative; left: 120px; top: 1px; padding: 10px 10px; border-radius: 5px; bottom: 7px; background-color: rgb(22, 185, 190); color: aliceblue; border: none; width: 40%;font-size: 17px; cursor: pointer;">Enquire Now</button></div>
+        </div>
+    </header>
+    <div class="mm">
+
+    </div>
+    <div class="logo">
+       <a href="./index.html"><i class="fa-solid fa-house" style="color: darkblue;"></i></a>
+        <div>|</div>
+        <div style="color: rgb(64, 64, 228); font-size: 19px;">Specialities & Treatments</div>
+        <div>|</div>
+        <div style="font-size: 19px; color: rgb(92, 89, 89);font-weight: 100;">Paediatrics</div>
+    </div>
+    <section>
+        <p> <h1 style="text-indent: 75px; padding-bottom: 7px; color: rgb(4, 4, 67); font-size: 43px; font-weight: 200;">Paediatrics</h1>
+           <div style="text-indent: 80px; padding-bottom: 10px; color: rgb(4, 4, 67)"> Best Children's Hospital in Hyderabad</div>
+           <div class="p1"> CARE Hospitals is one of the best pediatric hospitals in Hyderabad with a comprehensive approach towards treating children of all ages from neonates to adolescents. The department of paediatrics comprises of many subspecialities including paediatric oncology, paediatric neurology, paediatric orthopaedics, paediatric endocrinology, kidney transplants, paediatric surgery and urology, physiotherapy and rehabilitation, and paediatric gastroenterology and liver diseases.            </div>
+            
+          <div class="p2">CARE Hospitals in Hyderabad provdies best paediatric care services and are the trusted partners for your child’s health. We aim to put ourselves in parents’ shoes to endeavour primarily on a child's health. Our doctors are known as the best paediatricians in Hyderabad with extensive knowledge and experience. We want the best holistic development of your child at physical, emotional and social levels.   </div>
+            
+          <div class="p3">The department has performed many complex procedures and surgeries succesfully with excellent outcomes. Common conditions that are frequently treated are allergies, dyslexia, asthma, seizures, cerebral palsy, and congenital heart defects such as Patent ductus arteriosus (PDA) and atrial septal defect (ASD) etc. 
+          </div>
+            
+           <div class="p4"> </div>
+            
+          <div class="p5"> </p>
+    </section>
+    <div class="ul" style="height: 93vh;">
+    <ul> <b>Procedures </b> <br>
+      <div style="padding-left: 70px;">
+        At CARE Hospitals, our Pediatrics department offers a range of specialized procedures to ensure comprehensive care for children. These include:
+        <li>Newborn Care: Comprehensive neonatal care, including newborn screenings and treatment of congenital conditions.</li>
+        <li>Immunizations: Routine vaccinations to protect children against various infectious diseases. </li>
+        <li>Growth and Development Monitoring: Regular check-ups to track and support healthy growth and development.</li>
+        <li>Pediatric Surgery: Surgical interventions for congenital anomalies, appendicitis, and other conditions.</li>
+        <li>Chronic Disease Management: Treatment plans for chronic conditions like asthma, diabetes, and epilepsy.        </li>
+        <li>Behavioral and Developmental Assessments: Evaluations and therapy for developmental delays and behavioral issues.        </li>
+        <li>Emergency Care: Immediate treatment for pediatric emergencies, including injuries and acute illnesses.</li>
+     <b style="position: relative; right: 70px;">Tips for Choosing a Pediatrician</b> <br>
+        <li>Check Credentials: Ensure the pediatrician is board-certified and has the necessary qualifications.        </li>
+        <li>Experience: Look for a pediatrician with experience in treating children of similar age and health conditions as your child.        </li>
+        <li>Recommendations: Ask for recommendations from friends, family, or your primary care physician.        </li>
+        <li>Hospital Affiliations: Check which hospitals the pediatrician is affiliated with and their reputation.        </li>
+        <li>Communication Style: Choose a pediatrician who communicates clearly and listens to your concerns.</li>
+        </div>
+      </ul>
+    </div>
+    <div style="font-size: 30px; text-indent: 80px; color:rgb(1, 1, 57);">Team of Pediatricians at CARE Hospitals    </div>
+    <div style="font-size: 19px; text-align: justify; text-indent: 85px; width: 92%; line-height: 30px; padding-top: 20px; color:rgb(1, 1, 57);">Our pediatricians at CARE Hospitals are highly qualified and board-certified, with extensive experience in managing children's health. They specialize in a wide range of <p>pediatric care, including routine check-ups, vaccinations, and treatment of acute and chronic illnesses. Committed to providing compassionate and comprehensive care, they</p> <p>ensure the well-being of children at every stage of development.</p></div>
+    
+    <h3 style="font-size: 45px; text-align: center; padding-bottom: 20px;color: rgb(3, 3, 81);font-weight: 100; padding-top: 50px;">CARE Expertise</h3>
+      <div class="cp">
+        <div>Advanced NICU and PICU</div>
+        <div>Paediatric ENT        </div>
+        <div>Paediatric Nephrology</div>
+        <div>Paediatric Oncology</div>
+        <div>Paediatric Cardiac Surgery</div>
+        <div>Paediatric Gastroenterology</div>
+        <div>Paediatric Neurology</div>
+        <div>Paediatric Pulmonology</div>
+        <div>Paediatric Cardiology</div>
+        <div>Paediatric Liver Transplant        </div>
+        <div>Paediatric Neurosurgery        </div>
+
+      </div>
+        <h1 style="text-align: center; font-size: 45px; color: rgb(3, 3, 81); padding-top: 50px; padding-bottom: 25px; font-weight: 100;">Our Locations</h1>
+       <div class="po">
+        CARE Hospitals, a part of the Quality Care India Limited, brings international quality healthcare to serve patients across the world. With 17 healthcare facilities serving 7 cities across 6 states in India we are counted among the top 5 pan-Indian hospital chains.
+
+          
+        
+        </div>
+          <div class="nav">
+              <a href="" style="background-color: rgb(22, 185, 190); color: aliceblue;">Hyderabad</a>
+              <a href="" style=" padding: ">Raipur</a>
+              <a href="">Bhubaneswar</a>
+              <a href="">Visakhapatnam</a>
+              <a href="">Nagpur</a>
+              <a href="">Indore</a>
+              <a href="">Aurangabad</a>
+              <a href="">Clinics & Medical Centres</a>
+            </div> 
+            <h1 style="text-align: center; font-size: 35px; padding-top: 35px; color:rgb(4, 4, 113); font-weight: 100;" >Still Have a Questions?</h1>
+        <div class="gg">
+          <div style="text-align: center; font-size: 20px; padding-bottom:45px; padding-top: 20px;">If you cannot find answers to your queries, please fill out the enquiry form or call the number below. We will contact you shortly
+
+          </div>
+        </div>
+       <div class="butt" style="height: 10vh;"><button style="position: relative; left: 650px; padding: 15px 30px; background-color:rgb(57, 190, 195); border: cadetblue; color: aliceblue;font-size: 17px;"><i class="fa-solid fa-phone"></i>+91-40 6165 6565</button></div>
+       <div class="ddd" style="height: 1vh; background: url(./1.webp); padding-bottom: px;"></div>
+       <div class="add">
+        <div style="display: flex; flex-direction: column; gap: 6px; position: relative; top: 25px;"> <div style="font-size: 22px; padding-bottom: 30px; text-decoration: none;">Registered Office </div>
+            <span>Quality CARE India Limited</span>
+            <span>#6-3-248/2, Road No.1,</span>
+            <span>Banjara Hills, Hyderabad-500034,                </span>
+            <span>Telangana, India.                </span>
+            <span>CIN: U85110TG1992PLC014728                </span>
+            <span>+91-40-68106529                </span>
+            <span>Doctor Enquiry: +91-40-68106529</span>
+            <span style="display: flex; gap: 20px; font-size: 35px; padding-top: 15px;"><a href="https://www.youtube.com/c/CAREHospitalsIndia"><i class="fa-brands fa-youtube" style="color: red;"></i></a><a href="https://www.facebook.com/carehospitalsindia"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+              <a href="https://www.instagram.com/care.hospitals/"><i class="fa-brands fa-instagram" style="color: darkmagenta;"></i></a>  <a href="https://www.linkedin.com/company/care-quality-care-india-limited" style="color: white;"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></span>
+        </div>
+        <hr style="border-color:white;width: 1px; color: white; background-color: white; position: relative; right: 30px; top: 25px; height: 90%; border: none;">
+        <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 100px; top: 25px;"> <div style="font-size: 23px; padding-bottom: px;">Know Us</div> <hr style="width: 37%; border-color: black; position: relative; bottom: 12px;">
+          <span>Hospitals & Directions</span>
+          <span>Specialities & Treatments</span>
+          <span>Our Doctors</span>
+          <span>International Patient Services</span>
+          <span>News & Media</span>
+          <span>About Us</span>
+          <span>Awards</span>
+          <span>Careers</span>
+          <span><b style="text-decoration: underline;">TARIFF</b></span>
+          <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67); background-color: white; position: relative; top: 2px; border-radius: 5px; font-size: 15px;">Stent Pricing</button></span> 
+          <button style="position: relative; left:110px; bottom: 45px; padding: 10px 3px; border: none; color: rgb(4, 4, 67); background-color:white; width: 45%; border-radius: 5px; font-size: 15px;">Implant Pricing</button>
+          <span><b style="text-decoration: underline; position: relative; bottom: 40px;">ESG & Sustainability</b></span>
+          <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 40px;">ESG Materiality Survey              </button></span>
+          <span><b style="text-decoration: underline; position: relative; bottom: 30px;">EPIHC</b></span>
+          <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 30px;">Ethical Principles in Health Care              </button></span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 50px; top: 25px;"> <div style="font-size: 23px;">Actions </div> <hr style="width: 40%; border-color: black; position: relative; bottom: 12px;">
+            <span>Contact Us</span>
+            <span>Book an Appointment</span>
+            <span>Pay Online</span>
+            <span>Feedback</span>
+            <span>Lab Reports</span>
+            <span>Video Consultation</span>
+            <span>Stroke Risk Assessment</span>
+            <span>Blogs</span>
+            <span>Medical Information</span>
+            <span>Symptoms</span>
+            <span>Diagnostics</span>
+            <span>Diseases & Conditions</span>
+            <span>Surgery Cost</span>
+            <span>Animated Health Guide</span>
+            <span>Web Stories</span>
+            <span>Health Package</span>
+            <span>Second Opinion</span>
+            <span>Care Samvaad (Podcast)</span>
+          </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;color: darkblue; position: relative; top: 25px;"><div style="font-size: 23px; padding-bottom: px;">Centres of Excellence</div> <hr style="width: 70%; border-color: black; position: relative; bottom: 10px;">
+          <a href="./cardic.html" style="text-decoration: none;">Cardiac Sciences</a>
+          <a href="./gastro.html" style="text-decoration: none;">Gastro Sciences</a>
+          <a href="./nephrology.html" style="text-decoration: none;">Nephrology</a>
+          <a href="./neuro.html" style="text-decoration: none;">Neurosciences</a>
+          <a href="./oncology.html" style="text-decoration: none;">Oncology</a>
+          <a href="./orthopeadics.html" style="text-decoration: none;">Orthopaedics</a>
+          <a href="./peadatrics.html" style="text-decoration: none;">Paediatrics</a>
+          <a href="./pulmonology.html" style="text-decoration: none;">Pulmonology</a>
+          <a href="./robot.html" style="text-decoration: none;">Robot-Assisted Surgery</a>
+          <a href="./transplant.html" style="text-decoration: none;">Transplants</a>
+          <a href="./urology.html" style="text-decoration: none;">Urology</a>
+          <a href="./vascular.html" style="text-decoration: none;">Vascular & Endovascular Surgery and <br> Interventional Radiology</a>
+          <a href="./woman.html" style="text-decoration: none;">Woman& Child Institute </a>
+        </div>
+    </div>
+
+       
+       <div class="loc">
+          <div>Hyderabad</div>
+          <div>|</div>
+          <div>Raipur</div>
+          <div>|</div>
+          <div>Bhubaneswar</div>
+          <div>|</div>
+          <div>Visakhapatnam</div>
+          <div>|</div>
+          <div>Nagpur</div>
+          <div>|</div>
+          <div>Indore</div>
+          <div>|</div>
+          <div>Chh.Sambhajinagar</div>
+        </div>
+        <div class="footer">
+          <footer>Copyright © CARE Hospitals - All Rights Reserved</footer>
+          <footer>Feedback . Privacy policy . Grievance</footer>
+        </div>
+</body>
+</html>

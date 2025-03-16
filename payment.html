@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        outline: none;
+    }
+    body{
+    background-color: rgb(239, 236, 236);
+  }
+    .con{
+        display: flex;
+        width: 100%;
+        height: 11vh;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
+    .img{
+        width: 80px;
+        height: 50px;
+        position: relative;
+        left: 70px;
+    }
+    .img img{
+        width: 100%;
+        height: 120%;
+    }
+    .ph{
+        position: absolute;
+        right: 70px;
+        height: 30px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        background-color:darkblue;
+        border: 1px solid blue;
+        color: aliceblue;
+    }
+    .bnr{
+        width: 100%;
+        height: 49vh;
+    }
+    .bnr img{
+        width: 100%;
+        height: 100%;
+    }
+    .mat{
+        width: 80%;
+        background-color:white;
+        position: relative;
+        left: 150px;
+        height: 201vh;
+        top: 40px;
+        padding-bottom: 0px;
+        box-shadow: 2px 0px 3px 2px grey;
+    }
+   .mat table{
+        height: %;
+        width: 100%;
+        line-height: 50px;
+        box-sizing: border-box;
+        
+     
+    }
+    table td,tr{
+        height: %;
+    }
+    td:nth-child(odd){
+        font-size: 20px;
+        position: relative;
+        left: 100px;
+    }
+    input{
+        background-color: rgb(236, 235, 235);
+        border: none;
+        border: 1px solid black;
+    }
+    tr:nth-child(8) select:hover {
+        cursor:no-drop;
+        
+    }
+</style>
+<body>
+    <div class="con">
+        <div class="img">
+            <a href="./index.html"><img src="./cares-logo.webp" alt=""></a>
+        </div>
+        <div class="ph" onclick="fun()">
+            <a href="" style=" color: aliceblue; position: relative; top: 5px; text-decoration: none;" ><i class="fa-solid fa-phone"></i>+91-40 6165 6565</a>
+        </div>
+    </div>
+    <div class="bnr">
+        <img src="./payment-banner.jpg" alt="">
+        <h2 style="position: absolute; top: 250px; left: 100px; color: aliceblue; font-size: 35px; font-weight: 100;">Online Payment</h2>
+    </div>
+     <div class="mat">
+        <table>
+            <tr>
+                <td style=""><h3 style="position: relative; left: 50px; top: 3px; font-size: 35px; font-weight: 100; padding-top: 30px; padding-bottom: 20px;">Patient Details</h3></td>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr style="width: 100%;line-height: 70px; ">
+                <td style="position: relative; left: 150px;" >UHID <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 70%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"><u style="text-decoration: none; border: 2px solid rgb(57, 190, 195); color: aliceblue; background-color: rgb(57, 190, 195); position: relative; left: 95px; padding: 9px 10px;">Go</u></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: absolute; left: 150px;">Patient Name <u style="text-decoration: none; color: red;">*</u></td>
+                <td ><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            
+               <td><h3 style="position: relative; left: 50px; font-size: 35px;font-weight: 100; padding-top: 30px; padding-bottom: 20px;" >Payment Details</h3></td>
+
+            
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Hospital Name <u style="text-decoration: none; color: red;">*</u></td>
+                <td><select name="" id="" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;">
+                    <option value="">CARE Hospital Hi-Tech City</option>
+                </select></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Advance Type <u style="text-decoration: none; color: red;">*</u></td>
+                <td><select name="" id="" style="width: 80%; height: 40px; border-radius: 5px; position: relative; left: 50px;">
+                    <option value="">Select</option>
+                    <option value="">OPD Advance collection</option>
+                    <option value="">IPD Advance collection</option>
+                </select></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Amount <u style="text-decoration: none; color: red;">*</u></td>
+                <td ><input type="text" style="width: 37%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"><select name="" id="" style="width: 37%; height: 40px; position: relative; left: 100px; border-radius: 5px; border-color: lightslategray;"><option value="" selected>RS</option></select></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td ><h3 style="position: relative; left: 50px; font-size: 35px;font-weight: 100; padding-top: 30px; padding-bottom: 20px;">Payer Details</h3></td>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Payer Name <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Mobile No <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Email Id <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Address <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Country <u style="text-decoration: none; color: red;">*</u></td>
+                <td><select name="" id="" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;" ><option value="" disabled selected>INDIA</option></select></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">State <u style="text-decoration: none; color: red;">*</u></td>
+                <td><select name="" id="" style="text-transform: uppercase;width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;">
+                    <option value="">Andaman & Nicobar</option>
+                    <option value="">Andhra Pradesh</option>
+                    <option value="">Arunachala Pradesh</option>
+                    <option value="">Assam</option>
+                    <option value="">Bihar</option>
+                    <option value="">Chandigarh</option>
+                    <option value="">Chattisgarh</option>
+                    <option value="">Dadra & Nagar Haveli</option>
+                    <option value="">Daman & Diu</option>
+                    <option value="">Delhi</option>
+                    <option value="">Goa</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Haryana</option>
+                    <option value="">Himachal Pradesh</option>
+                    <option value="">Jammu & Kashmir</option>
+                    <option value="">Jharkand</option>
+                    <option value="">Karnataka</option>
+                    <option value="">kerala</option>
+                    <option value="">Lakshwadeep</option>
+                    <option value="">Madhya Pradesh</option>
+                    <option value="">Maharasthra</option>
+                    <option value="">Manipur</option>
+                    <option value="">meghalaya</option>
+                    <option value="">mizoram</option>
+                    <option value="">nagaland</option>
+                    <option value="">odissa</option>
+                    <option value="">pondicherry</option>
+                    <option value="">punjab</option>
+                    <option value="">rajasthan</option>
+                    <option value="">sikkim</option>
+                    <option value="">tamilnadu</option>
+                    <option value="">telangana</option>
+                    <option value="">tripura</option>
+                    <option value="">uttar Pradesh</option>
+                    <option value="">uttarakhand</option>
+                    <option value="">west bengal</option>
+                </select></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">City <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 150px;">Zip/Postal Code <u style="text-decoration: none; color: red;">*</u></td>
+                <td><input type="text" style="width: 80%; height: 40px; border-radius: 5px; border-color: lightslategray; position: relative; left: 50px;"></td>
+            </tr>
+             <tr style="line-height: px;">
+                <td style="position: relative; left: 160px;top: px; "><i class="fa-solid fa-square-check" style="color: rgb(57, 190, 195); "></i></td>
+                <td style="position: relative; right: 115px; font-size: 20px; top: px;"><a href=""> I have read and agree to the Terms and Conditions. & Privacy policy of CARE Hospitals          </a></td>
+            </tr>
+           
+            <tr style="line-height: 70px;">
+                <td style="position: relative; left: 500px; top: px;"><button style="padding: 10px 30px; background-color: rgb(57, 190, 195); color: aliceblue; font-size: 17px; border: none; border-radius: 5px;">Submit</button></td>
+                
+            </tr>
+        
+        </table>
+
+    </div>      
+    
+    <div class="foot" style="width: 100%; position: a; top: 1450px; padding-top: 40px;"><footer style="text-align: center; background-color:rgb(206, 204, 204); height: 7vh; width: 100%; color:rgb(6, 6, 98); position: relative; top: 20px; display: flex; justify-content: center; align-items: center; font-size: 19px;">Copyright CARE Hospitals- All rights reserved</footer></div>
+
+    <script>
+        let phr=document.getElementsByClassName("ph")[0]
+
+        let fun=()=>{
+            alert("https://payments.carehospitals.com wants to open this application.")
+        }
+    </script>
+</body>
+</html>

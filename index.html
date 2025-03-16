@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Hospital in Hyderabad | Bengaluru</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+  body{
+    background-color: rgb(239, 236, 236);
+  }
+  nav{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color: rgb(3, 182, 185);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    color: rgb(198, 213, 225);
+    position: sticky;
+    top: 0px;
+    
+  }
+  nav a{
+    text-decoration: none;
+    color:aliceblue ;
+  }
+  nav a:hover{
+   
+    text-decoration: underline;
+  }
+
+
+  .p1{
+    width: 6%;
+  }
+  .con1{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    align-items: center;
+    position:sticky;
+    top: 35px;
+    bottom: px;
+    /* background-color:whitesmoke; */
+    background-color: white;
+  }
+  .img{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+  }
+  .img img{
+    width: 100%;
+    height: 140%;
+  }
+  .mat{
+    width: 60%;
+    height: 5px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color:rgb(5, 5, 100);
+  }
+
+   /* i:hover{
+    font-size: 20px; 
+    
+  }  */
+  header{
+    width: 100%;
+  }
+  .whtsimg{
+    width: 100%;
+    height: 400px;
+  }
+  .whtsimg img{
+    width: 100%;
+    height: 100%;
+  }
+  .dotcon{
+    position: absolute;
+    bottom:200px;
+    left: 720px;
+    font-size: 11px;
+    text-align: center;
+    color:white;
+    display: flex;
+    gap: 15px;
+ 
+  }
+  .dotcon:hover{
+    cursor: pointer;
+  }
+  main{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: rgb(248, 246, 243);
+    position: relative;
+    left: 130px;
+    
+  }
+  main div{
+    
+  }
+  .img1{
+    width: 45%;
+    height: 100%;
+   
+  }
+  .img1 img{
+    width: 100%;
+    height: 100%;
+  }
+  .cont{
+    width: 40.5%;
+    height: 100%;
+    font-size: 30px;
+    position:relative;
+    left: 70px;
+    display:flex;
+    flex-wrap: wrap;
+gap: 30px;
+    flex-direction: col;
+    font-size: 17px;
+align-items:flex-start ;
+
+  justify-content: ce;
+  }
+  .cont i{
+    color:rgb(3, 182, 185);
+    font-size: 20px;
+    gap: 0px;
+    position: relative;
+    right: 5px;
+    top: 2px;
+  }
+  .cont a{
+    text-decoration: none;
+    position: relative;
+    bottom: 0px;
+  }
+  aside{
+    padding-top: 20px;
+  }
+   .cards{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    gap: 40px;
+  padding-top: 20px;
+   }
+   .card1{
+    width: 28%;
+    height: 100%;
+    background-color: white;
+  
+   }
+   .cdimg{
+    width: 100%;
+   }
+   .cdimg img{
+    width: 100%;
+   } 
+   .cdcon{
+    width: 100%;
+
+    line-height: 27px;
+
+   }
+   .card2{
+    width: 28%;
+    height: 100%;
+    background-color: white;
+   }
+   .cdimg2{
+    width: 100%;
+   }
+   .cdimg2 img{
+    width: 100%;
+   } 
+   .cdcon2{
+    width: 100%;
+  
+    line-height: 25px;
+   }
+   .card3{
+    width: 28%;
+    height: 100%;
+    background-color:white;
+   }
+   .cdimg3{
+    width: 100%;
+   }
+   .cdimg3 img{
+    width: 100%;
+   } 
+   .cdcon3{
+    width: 100%;
+
+    line-height: 25px;
+    
+   }
+   .navcon
+   {
+    height: 18vh;
+   }
+   .nav {
+    width: 100%;
+    height: vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    /* background-color: rgb(237, 237, 239); */
+    background-color:white; 
+    position: relative;
+  
+    padding-bottom: px;
+    box-shadow: 0px 0px 8px 5px lightblue;
+    padding: 3px 0px;
+   }
+   .nav a{
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 19px;
+    padding: 20px 20px;
+    
+  
+   }
+   .nav a:hover{
+    background-color:rgb(22, 185, 190);
+    color: aliceblue;
+   }
+   .po {
+    font-size: 21px;
+     text-align: center; 
+     text-indent: 100px;
+      position: relative; 
+      top: px; 
+      height: 100%;
+      width: 92%;
+    padding-top: px;
+      padding-bottom: 35px;
+      color: rgb(1, 1, 57);
+   }
+   .menu{
+    position: relative;
+   }
+   .submenu{
+        width: 400%;
+        background-color:rgb(214, 213, 213);
+        position: absolute;
+        top: 100px;
+        left: px;
+        color: black;
+        flex-wrap: wrap;
+        flex-direction: c;
+        align-items: flex-start;
+        padding-left: 10px;
+        box-sizing: border-box;
+        gap: 10px;
+        display: none;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 62vh;
+        bottom: 0px;
+   }
+   .menu:hover{
+
+     cursor:pointer;
+   }
+   /* .menu:hover .submenu{
+    display: flex;
+  } */
+  .submenu span{
+    border: 1px solid red;
+    padding: 10px 10px;
+    width: 40%;
+    border: none;
+    background-color:rgb(22, 162, 174) ;
+    color: white;
+    
+   }
+   .mn{
+    position: relative;
+   }
+   .smenu{
+    width: 500%;
+    height: 600px;
+        background-color:rgb(214, 213, 213);
+        position: absolute;
+        top: 0px;
+        left: px;
+        color: black;
+        flex-wrap: wrap;
+        flex-direction: c;
+        align-items: flex-start;
+        padding-left: 10px;
+        box-sizing: border-box;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-top: 20px;
+        height: 62vh;
+        bottom: 0px;
+   }
+   .s1{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .s2{
+    width: 20%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content:;
+    align-items:center;
+  
+   }
+   .s2 a{
+    width: 100%;
+   }
+   .s3{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: 100%;
+   }
+   .s3 a{
+    width: 50%;
+   }
+   .loc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: px;
+    color: rgb(5, 5, 100);
+    background-color: white;
+   }
+   .footer{
+    height: 12vh;
+    background-color: rgb(222, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 19.4px;
+    gap: 500px;
+    color:rgb(3, 3, 81);
+   }
+   .footer footer{
+    padding-top: 25px;
+   }
+     .add{
+    display: flex;
+     justify-content:center;
+     gap: 100px; 
+     height: 91vh;
+      padding-top: 30px; 
+      font-size: 18px; 
+      background-color:rgb(221, 220, 220);
+      
+   }
+   .add div , a{
+    color: rgb(3, 3, 73);
+   }
+ 
+  .nimg{
+    width: 40%;
+    height: 100px;
+  }
+  .nimg img{
+    width: 100%;
+    height: 100%;
+  }
+  .news a{
+    text-decoration: none;
+  }
+  .qs{
+    
+  }
+  .ques
+  {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+ justify-content: space-around;
+ gap: 15px;
+ padding-bottom: 40px;
+ position: relative;
+ left: 50px;
+  }
+  .q1m{
+    width: 90%;
+    font-size: 25px;
+    border: 1px solid rgb(172, 165, 165);
+    padding: 10px 30px;
+    position: relative;
+    left: 50px;
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+   
+    /* transition: 10s all ease; */
+  }
+  .qm1{
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  
+  }
+  .qm1 p{
+    width: 100%;
+  
+  }
+  .q2m{
+    width: 90%;
+    font-size: 25px;
+    border: 1px solid red;
+    padding: 10px 30px;
+    position: relative;
+    left: 50px;
+    background-color:white;
+    border: none;
+    padding: 15px 30px;
+  }
+  .qm2{
+    display: none;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+
+  }
+  .q3m{
+    width: 90%;
+    font-size: 28px;
+    border: 1px solid red;
+    padding: 10px 30px;
+    position: relative;
+    left: 50px;
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+  }
+  .qm3{
+    display: none;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+  
+  }
+  .q4m{
+    width: 90%;
+    font-size: 28px;
+    border: 1px solid red;
+    padding: 10px 30px;
+    line-height: 30px;
+    position: relative;
+    left: 50px;
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+  }
+  .qm4{
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+  }
+  .q5m{
+    width: 90%;
+    font-size: 28px;
+    border: 1px solid red;
+    padding: 10px 30px;
+    position: relative;
+    left: 50px;
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+  }
+  .qm5{
+    display: none;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+   
+  }
+  /* .menu:hover .submenu{
+    display: flex;
+  }
+  /* .q1m:hover .qm{
+    display: flex;
+  } */ 
+   .ns1:hover .nmm{
+    text-decoration: underline;
+   }
+   .bg1:hover{
+    cursor:pointer;
+
+   }
+   .bg1:hover .nmn{
+    text-decoration: underline;
+   }
+   .bg2:hover{
+    cursor:pointer;
+
+   }
+
+   .bg4:hover{
+    cursor:pointer;
+
+   }
+   .bg4 .bgm:hover .nmn{
+    text-decoration: underline;
+   }
+
+   .bg5:hover{
+    cursor:pointer;
+
+   }
+   .bg5 .bgm:hover .nmn{
+    text-decoration: underline;
+   }
+
+   .bg2 .bgm:hover .nmn{
+    text-decoration: underline;
+   }
+   .pe1:hover{
+    cursor: pointer;
+   }
+   .pb:hover{
+    cursor: pointer;
+   }
+</style>
+<body>
+    <div class="con">
+        <nav>
+          <a href="">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./international.html">International Patients</a>
+            <a href="./payment.html" target="_blank">Pay Online</a>
+            <div onclick="fun(this)" class="menu" style="color: white;">Online Lab Reports
+              <div class="submenu">
+              <span>Banjara Hills,Hyderbad</span>
+              <span>OPD Banjara Hills,Hyderbad</span>
+              <span>HITEC City, Hyderabad</span>
+              <span>OPD HITEC City, Hyderabad</span>
+              <span>Musheerabad, Hyderabad</span>
+              <span>Nampally, Hyderabad</span>
+              <span>Malakpet, Hyderabad</span>
+              <span>Bhubaneswar</span>
+              <span>Raipur</span>
+              <span>Health City, Visakhapatnam</span>
+              <span>ramnagar, Visakhapatnam</span>
+              <span>Nagpur</span>
+              <span>Indore</span>
+              <span>Chh. Sambhajinagar</span>
+              <span>CARE multi-speciality Clinic,Srinagar Colony</span>
+              <span>CARE Medical Center,Tolichowi,Hyderabad</span>
+              </div>
+            </div>
+            <a href="./career.html">Careers</a>
+            <a href="./enquiry.html">Enquiry Now</a>
+            <a href="./feedback.html">Feedback</a>
+            
+            <a href="" class="a" onclick="fun6(this)"><i class="fa-solid fa-phone" ></i>+91-40 6165 6565</a>
+            <select name="" id="" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+                <option value="">English</option>
+                <option value="">Bengali</option>
+                <option value="">Hindi</option>
+                <option value="">Kannada</option>
+                <option value="">Marati</option>
+                <option value="">Tamil</option>
+                <option value="">Telugu</option>
+                <option value="">Arabic</option>
+                <option value="">Somali</option>
+                <option value="">Malayalam</option>
+                <option value="">Urdu</option>
+            </select>
+            <select name="" id="" class="p1" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+                <option value="" selected>Hospitals</option>
+                <option value="">CARE Hospital,Banjara Hills,Hyderabad</option>
+                <option value="">CARE Hospital Outpatient Center,Banjara Hills,Hyderabad</option>
+                <option value="">CARE Hospital,Hitech City,Hyderabad</option>
+                <option value="">CARE Hospital Outpatient Center,Hitech City,Hyderabad</option>
+                <option value="">Gurunanak CARE Hospitals</option>
+                <option value="">CARE Hospitals, Nampally, Hyderabad                </option>
+                <option value="">CARE Hospitals, Malakpet, Hyderabad         </option>
+                <option value="">CARE Hospitals, Bhubaneswar                </option>
+                <option value="">Ramkrishna CARE Hospitals, Raipur                </option>
+                <option value="">CARE Hospitals, Ramnagar, Visakhapatnam                </option>
+                <option value="">CARE Hospitals, Health City, Arilova                </option>
+                <option value="">Ganga CARE Hospital Limited, Nagpur                </option>
+                <option value="">CARE CHL Hospitals, Indore                </option>
+                <option value="">CARE CIIGMA Hospitals, Chh. Sambhajinagar</option>
+            </select>
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <head>
+            <div class="con1">
+                <div class="img">
+                    <a href=""><img src="./cares-logo.webp" alt=""></a>
+                </div>
+                <div class="mat">
+                  <div style="font-size: 19px; display: flex; gap: 10px;">
+                    <div><i class="fa-solid fa-user-doctor"></i></div>
+                      <div>Doctors</div>
+                    </div>
+                    <div style="font-size: 19px; display: flex; align-items: center; justify-content: center; gap: 10px;" >
+                  <div><i class="fa-solid fa-stethoscope" ></i></div>
+                   <div> Specialities& <br> Treatments</div>
+                   </div>
+                    <div  style="font-size: 19px; display: flex; align-items: center; gap: 10px; justify-content: center;  ">
+                      <div><i class="fa-regular fa-hospital"></i></div>
+                       <div class="m1">Hospitals& <br> Directions</div>
+                       </div>
+                    <div style="font-size: 19px; display: flex; gap: 10px; align-items: center; border: 1px solid red; padding: 5px 10px; background-color: rgb(6, 6, 106); color: white; border: none; border-radius: 5px;">
+                      <div><i class="fa-solid fa-calendar-days" ></i></div>
+                       <div>Book an <br> Appointment</div>
+                       </div>
+                    <div style="font-size: 19px; display: flex; gap: 10px;">
+                      <div><i class="fa-solid fa-address-book"></i></div>
+                      <div>Contact Us</div>
+                      </div>
+                    <!-- <div class="smenu">
+                      <div class="s1">
+                      <span><a href="./cardic.html">Cardiac Sciences</a></span>
+                        <a href="./gastro.html">Gastro Sciences</a>
+                        <a href="./nephrology.html">Nephrology</a>
+                        <a href="./neuro.html">Neurosciences</a>
+                        <a href="./oncology.html">Oncology</a>
+                        <a href="./orthopeadics.html">Orthopaedics</a>
+                        <a href="./peadatrics.html">Peaditricks</a>
+                        <a href="./pulmonology.html">Pulmonology</a>
+                        <a href="./robot.html">Robot-Assisted Surgery</a>
+                        <a href="./transplant.html">Transplants</a>
+                        <a href="./urology.html">Urology</a>
+                        <a href="./vascular.html">Vascular & Endovascular Surgery and Interventional Radiology</a>
+                        <a href="./woman.html">Woman & Child Institute</a>
+                      </div>
+                      <div class="s2">
+                        
+                  <a href="">Anaesthesiology</a>
+                  <a href="">Arthroscopy & Sports Medicine</a>
+                  <a href="">Bone Marrow Transplant</a>
+                  <a href="">Cardiac Surgery</a>
+                  <a href="">Cardiology</a>
+                  <a href="">Critical Care Medicine</a>
+                  <a href="">Dentistry</a>
+                  <a href="">Dermatology</a>
+                  <a href="">Dietetics & Nutrition</a>
+                  <a href="">Emergency Medicine</a>
+                  <a href="">Endocrinology</a>
+                  <a href="">ENT</a>
+                  <a href="">Gastroentology - Surgical</a>
+                  <a href="">Gastroentology Medical</a>
+                  <a href="">General Medicine/Internal Medicine</a>
+                  <a href="">General Surgery</a>
+                  <a href="">Geriatrics</a>
+                  <a href="">Haematology</a>
+                  <a href="">Interventional Radiology</a>
+                  <a href="">Lab Medicine</a>
+                  <a href="">Laparoscopic and Bariatric Surgery</a>
+                  <a href="">Liver Transplantation and Hepatobiliry Surgery</a>
+                  <a href="">Medical Oncology</a>
+                  <a href="">Minimal Access Surgery</a>
+                  <a href="">Neonatology</a>
+                  <a href="">Nephrology</a>
+                  <a href="">Neurology</a>
+                  <a href="">Neurosurgery</a>
+                  <a href="">Nuclear Medicine</a>
+                  <a href="">Ophthalmology</a>
+                  <a href="">Orthopaedics</a>
+                  <a href="">Peaditricks Cardiac Surgery</a>
+                  <a href="">Peaditricks Cardiology</a>
+                  <a href="">Peaditricks Neurology</a>
+                  <a href="">Peaditricks Neurosurgery</a>
+                  <a href="">Peaditricks Surgery</a>
+                  <a href="">peadatrics Urology</a>
+                  <a href="">Peaditricks</a>
+                  <a href="">physiotherapy & Rehabilitation</a>
+                  <a href="">Plastic Surgery</a>
+                  <a href="">Psychiatry</a>
+                  <a href="">Pulmonology</a>
+                  <a href="">Radiology Oncology</a>
+                  <a href="">Radiology</a>
+                  <a href="">Renal Transplant</a>
+                  <a href="">Rheumatology</a>
+                  <a href="">Spine Surgery</a>
+                  <a href="">Surgical Oncology</a>
+                  <a href="">Urology</a>
+                  <a href="">Vascular & Endovascular Surgery</a>
+                  <a href="">Vascular & Interventional Radiology</a>
+                  <a href="">Vascular Surgery</a>
+                  <a href="">Woman & Child Institute</a>
+                  </div>
+                      <div class="s3">
+                        <a href=""> 2D/3D ECHO</a>
+                  <a href="">Abdominal Aortic Aneurysm </a>
+                  <a href="">Abdominoplasty </a>
+                  <a href="">ACTH Stimulation Tests </a>
+                  <a href="">Acute Limb Ischemia </a>
+                  <a href="">Acute Renal Failure </a>
+                  <a href="">Acute Venous Disorders </a>
+                  <a href="">Adnexal Tumors </a>
+                  <a href="">Adrenal Cancer </a>
+                  <a href="">Adult Liver Transplant </a>
+                  <a href="">Advanced NICU and PICU </a>
+                  <a href="">Alzheimer Disease </a>
+                  <a href="">Anaemia </a>
+                  <a href="">Anal Cancer </a>
+                  <a href="">Aneurysm </a>
+                  <a href="">Angiography/Angioplasty </a>
+                  <a href="">Aortic Aneurysms </a>
+                  <a href="">Aortic Arch Disease </a>
+                  <a href="">Arrhythmia </a>
+                  <a href="">Arthritis </a>
+                  <a href="">Asthma </a>
+                  <a href="">Axilla Bulge Correction </a>
+                  <a href="">Back Pain </a>
+                  <a href="">Bariatric Surgery </a>
+                  <a href="">Beating Heart Surgery </a>
+                  <a href="">Bentall Procedure </a>
+                  <a href="">BIMA -Bilateral Internal Mammary </a>
+                  <a href="">Bladder Cancer </a>
+                  <a href="">Blepharoplasty </a>
+                  <a href="">Body Contouring Surgeries </a>
+                  <a href="">Bone & Soft Tissue Cancer </a>
+                  <a href="">Bone Marrow Transplant </a>
+                  <a href="">Brain & Spine Injuries </a>
+                  <a href="">Brain and Spinal Cord Cancer </a>
+                  <a href="">Brain Aneurysm </a>
+                  <a href="">Brain Stroke </a>
+                  <a href="">Breast Augmentation </a>
+                  <a href="">Breast Cancer </a>
+                  <a href="">Breast Lift </a>
+                  <a href="">Breast Reduction </a>
+                  <a href=""> CAPD Catheter Insertion </a>
+                  <a href="">Cardiovascular Surgery </a>
+                  <a href="">Cerebrovascular Disorders </a>
+                  <a href="">Cervical Cancer </a>
+                  <a href="">Cervical Fusion </a>
+                  <a href="">Chemotherapy</a>
+                  <a href="">Chin and Cheek Implants</a>
+                  <a href="">Cochelear Implant</a>
+                  <a href="">Cognitive Disorders</a>
+                  <a href="">Colonoscopy</a>
+                  <a href="">Colorectal Cancer/Colon Cancer</a>
+                  <a href="">Congenital Anomaly of Uterus</a>
+                  <a href="">Coronary Artery Bypass Grafting</a>
+                  <a href="">Cystectomy</a>
+                  <a href="">DCR</a>
+                  <a href="">Deep Brain Stimulation</a>
+                  <a href="">Cystectomy</a>
+                 <a href="">DCR</a>
+                 <a href="">Deep Brain Stimulation</a>
+                 <a href="">Deep Vein Thrombosis</a>
+                 <a href="">Dementia</a>
+                 <a href="">Developement and Behavioural Peaditricks</a>
+                 <a href="">Dialys</a>
+                 <a href="">Dimple Creation</a>
+                 <a href="">Disc Herniation</a>
+                 <a href="">Dopplers</a>
+                 <a href="">DOR Procedure</a>
+                 <a href="">Dystonia</a>
+                 <a href="">Electrophysiology-Heart Rhythm Disorders</a>
+                 <a href="">Endobronchial Ultrasound(EBUS)</a>
+                 <a href="">Endocrine Treatment</a>
+                 <a href="">Endolymphatic Sac Surgery</a>
+                 <a href="">Endometriosis</a>
+                 <a href="">Endoscopy</a>
+                 <a href="">Enteroscopy</a>
+                 <a href="">Epilepsy Surgery</a>
+                 <a href="">ERC & MRCP</a>
+                 <a href="">Esophageal Cancer</a>
+                 <a href="">Esophageal Diseases</a>
+                 <a href="">Facial Nerve Repair</a>
+                 <a href="">Family Planning & Contraception</a>
+                 <a href="">Fat Augmentation</a>
+                 <a href="">Female Urology</a>
+                 <a href="">Fits/Seizures</a>
+                 <a href="">Flail Chest</a>
+                 <a href="">Fracture</a>
+                 <a href="">Gastrointestinal Oncology</a>
+                 <a href="">Gastrostomy</a>
+                 <a href="">Gender differentiation disorders</a>
+                 <a href="">Gestational diabetes</a>
+                 <a href="">Gynaeclogic Oncology</a>
+                 <a href="">Head and Neck Oncology</a>
+                 <a href="">Heart Transplantation</a>
+                 <a href="">Heart Valve Surgery- Valve Repair,Valve Replacement</a>
+                 <a href="">High Risk Pregnency</a>
+                 <a href="">Hip Replacement</a>
+                 <a href="">Holter Monitoring</a>
+                 <a href="">Hysteroscopy</a>
+                 <a href="">Immunotherapy</a>
+                 <a href="">Impaired Hearing</a>
+                 <a href="">Implantable Heart Divices-ICD,Pacemaker</a>
+                 <a href="">Infertility and reproductive endocrinology</a>
+                 <a href="">Insomnia</a>
+                 <a href="">Intestine Disease</a>
+                 <a href="">IVF</a>
+                 <a href="">Joint Replacement</a>
+                 <a href="">Juvenile Diabetes</a>
+                 <a href="">Kidney Stone Removal</a>
+                 <a href="">Kidney Transplant</a>
+                 <a href="">Knee Replacement</a>
+                 <a href="">Laparoscopic Surgery</a>
+                 <a href="">Laryngeal Surgery</a>
+                 <a href="">Leukaemia</a>
+                 <a href="">Lip Reduction</a>
+                 <a href="">Liposuction and Liposculpting</a>
+                 <a href="">Liver and Bile Duct Diseases</a>
+                 <a href="">Liver Cancer</a>
+                 <a href="">Lung Cancer</a>
+                 <a href="">LVAD</a>
+                 <a href="">Male Infertility</a>
+                 <a href="">Mastoidectomy</a>
+                 <a href="">Menopause</a>
+                 <a href="">Mesenteric Ischemia</a>
+                 <a href="">Mesenteric Vasculature</a>
+                 <a href="">Micro Laryngeal Surgery</a>
+                 <a href="">Migrane & Headache</a>
+                 <a href="">Minimal Invasive Spine Surgery</a>
+                 <a href="">Multiple Sclerosis</a>
+                 <a href="">Myomectomy</a>
+                 <a href="">Neck & Back Pain</a>
+                 <a href="">Neovagina Formation/Creation</a>
+                 <a href="">Nerve System Disorders</a>
+                 <a href="">Neuro Oncology</a>
+                 <a href="">Normal & Instrumental Delivery</a>
+                 <a href="">Nose Correction</a>
+                 <a href="">Nutcracker Syndrome</a>
+                 <a href="">Open Heart Surgery</a>
+                 <a href="">Optic Nerve Decompression</a>
+                 <a href="">Orthopaedic Oncology</a>
+                 <a href="">Orthopaedic related diabetic complications</a>
+                 <a href="">Osteoporosis</a>
+                 <a href="">Otoplasty</a>
+                 <a href="">Ovarian Cancer</a>
+                 <a href="">Peadatric Cardic Surgery</a>
+                 <a href="">Peadatric Cardiology</a>
+                 <a href="">Peadatric ENT</a>
+                 <a href="">Peadatric Gastroentology</a>
+                 <a href="">Peadatric Liver Transplant</a>
+                 <a href="">Peadatric Nephrology</a>
+                 <a href="">Peadatric Neurology</a>
+                 <a href="">Peadatric Neurosciences</a>
+                 <a href="">Peadatric Oncology</a>
+                 <a href="">Peadatric Pulmonology</a>
+                 <a href="">Peadatric Urology</a>
+                 <a href="">Palliative Care</a>
+                 <a href="">Pancreas Cancer</a>
+                 <a href="">Pancreatic Disease</a>
+                 <a href="">Parkinsons Disease</a>
+                 <a href="">PCOD</a>
+                 <a href="">Pelvic Venous Congestion Syndrome</a>
+                 <a href="">Penile Implants & Transplants</a>
+                 <a href="">Peripheral Angiography</a>
+                 <a href="">Peripheral Angioplasty</a>
+                 <a href="">Peipheral Arterial Disease</a>
+                 <a href="">Pulmonology and Tuberculosis</a>
+                 <a href="">Post-Bariatric Body Contouring</a>
+                 <a href="">Prostate Cancer</a>
+                 <a href="">Pulmonary Embolism</a>
+                 <a href="">Pulmonary Hypertension</a>
+                 <a href="">Reconstruction of Middle and External Ear Structures</a>
+                 <a href="">Renal Artery Stenosis </a>
+                 <a href="">Renal Biopsy</a>
+                 <a href="">Rhinoplasty</a>
+                 <a href="">Rhinoplasty and Septo Rhinoplasty</a>
+                 <a href="">Sciatica</a>
+                 <a href="">Scoliosis</a>
+                 <a href="">Sexually Transmittes Disease</a>
+                 <a href="">Sholder Replacement</a>
+                 <a href="">Skin Cancer</a>
+                 <a href="">Sleep Study Analysis</a>
+                 <a href="">Snoring & Sleep Apnea</a>
+                 <a href="">Spinal Stenosis</a>
+                 <a href="">Spondylitis</a>
+                 <a href="">Stent Less Heart Valve Surgeries</a>
+                 <a href="">Stenting</a>
+                 <a href="">Stroke Management</a>
+                 <a href="">Structural Heart Diseases</a>
+                 <a href="">TAVR/TAVI</a>
+                 <a href="">Tennis Elbow</a>
+                 <a href="">Thalassemia</a>
+                 <a href="">Therapeutic & Diagnostic Oncology Interventions</a>
+                 <a href="">Thoracic and Thoracoabdominal Aortic Aneurysm</a>
+                 <a href="">Thoratic Outlet Syndrome</a>
+                 <a href="">Thyroplasty</a>
+                 <a href="">Tilt Table Study</a>
+                 <a href="">TMT</a>
+                 <a href="">Tracheostomy</a>
+                 <a href="">Tubectomy</a>
+                 <a href="">Tummy Tuck</a>
+                 <a href="">Type 2 Diabetes</a>
+                 <a href="">Urology Cancers</a>
+                 <a href="">Uterine Cancer</a>
+                 <a href="">Uterine Fibroids</a>
+                 <a href="">UTI</a>
+                 <a href="">Vaginal Descent</a>
+                 <a href="">Valve Sparing Surgery</a>
+                 <a href="">Varicose Veins</a>
+                 <a href="">Varicose Veins Surgery</a>
+                 <a href="">Varicose Veins,Venous Ulcers and Venous Leg Swelling</a>
+                 <a href="">Vascular & Non-Vascular Hepatobiliry Interventions</a>
+                 <a href="">Vascular & Non-Vascular Pulmonary Interventions</a>
+                 <a href="">Vascular & Non-Vascular Renal Interventions </a>
+                 <a href="">Vascular Access for Chemotherapy</a>
+                 <a href="">Vascular Infections and complications</a>
+                 <a href="">Vascular Malformations</a>
+                 <a href="">Venous Tumours</a>
+                 
+                      </div>
+                </div>
+              </div> -->
+
+                </div>
+            </div>
+        </head>
+        <header>
+            <div class="whtsimg">
+            <img src="./1.jpeg" alt="">
+            <div class="dotcon">
+            <i class="fa-solid fa-square-full" onclick="set(0)" style="color: darkblue;"></i>
+            <i class="fa-solid fa-square-full" style="color:white;" onclick="set(1)"></i>
+            <i class="fa-solid fa-square-full" style="color:white;" onclick="set(2)"></i>
+            <i class="fa-solid fa-square-full" style="color:white;" onclick="set(3)"></i>
+     
+            </div>
+            </div>
+        </header>
+        <h2 style="text-align: center; font-size: px; color: rgb(5, 5, 82); font-size: 50px;padding-bottom: 20px; padding-top: 30px; font-weight: 100;">Centre of Excellence</h2>
+        <main>
+          <div class="img1">
+            <img src="./left-image-care.webp" alt="">
+          </div>
+          <div class="cont">
+            <div style="position: relative; right: 200px; top: 20px;;"><i class="fa-solid fa-right-long"></i><a href="./cardic.html">Cardiac Sciences</a> </div>
+            <div style="position: relative; top: 25px; right: 140px;"><i class="fa-solid fa-right-long"></i><a href="./gastro.html">Gastro Sciences</a></div>
+            <div style="position: relative; top: 30px; right: 80px;"><i class="fa-solid fa-right-long"></i><a href="./nephrology.html">Nephrology</a></div>
+            <div style="position: relative; top: 7px; right: 200px;"><i class="fa-solid fa-right-long"></i><a href="./neuro.html">Neuro Sciences</a></div>
+            <div style="position: relative; top: 12px; right: 130px;"><i class="fa-solid fa-right-long"></i><a href="./oncology.html">Oncology</a></div>
+            <div style="position: relative; top: 15px; right: 30px;"><i class="fa-solid fa-right-long"></i><a href="./orthopeadics.html">Orthopaedics</a></div>
+            <div style="position: relative; top: px; right: 200px;"><i class="fa-solid fa-right-long"></i><a href="./peadatrics.html">Peaditricks</a></div>
+            <div style="position: relative; top: 3px; right: 100px;"><i class="fa-solid fa-right-long"></i><a href="./pulmonology.html">Pulmonology</a></div>
+            <div style="position: relative; top: 7px; right: 25px;"><i class="fa-solid fa-right-long"></i><a href="./transplant.html">Transplants</a></div>
+            <div style="position: relative; bottom:8px; right: 200px;"><i class="fa-solid fa-right-long"></i><a href="./robot.html">Robot-Assisted <u style="text-decoration: none; position: relative; top: 20px; right: 110px;">Surgery</u></a></div>
+            <div style="position: relative; top: 3px; right: 185px;"><i class="fa-solid fa-right-long"></i><a href="./urology.html">Urology</a></div>
+            <div style="position: relative; bottom: 80px; left: 240px;" ><i class="fa-solid fa-right-long"></i><a href="./woman.html">Women & Child <u style="text-decoration: none; position: relative; top: 20px; right: 110px;">Institute</u></a></div>
+            <div style="position: relative; bottom: 10px; right: 420px; "><i class="fa-solid fa-right-long"></i><a href="./vascular.html">Vascular & Endovascular <br> surgery and Interventional <br> Radiology</a></div>
+          </div>
+        </main>
+          <div style="position: absolute; left: 1050px; top: 960px; font-size: 30px;"><a href="./speciality.html" style="text-decoration: none; color: rgb(22, 162, 174);">View All</a><i class="fa-solid fa-right-long" style="color:rgb(22, 162, 174); position: relative; left: 5px;"></i></div>
+          <h1 style="text-align: center; font-size: 45px; font-weight: 100; color: rgb(5, 5, 82);  padding-top: 50px;">Why CARE Hospitals</h1>
+          <aside>
+          <div class="cards">
+          <div class="card1">
+            <div class="cdimg">
+            <img src="./care-hospitals-treatments-2.webp" alt="">
+            </div>
+            <div class="cdcon">
+            <h3 style="font-size: 25px; font-weight: 100; padding-top: 20px; padding-left: 30px;">Leading Doctors</h3>
+            <p style="font-size: 20px; padding-left: 30px; padding-top: 20px; padding-bottom: 50px;">A pool of over 1400 doctors to provide you <br> modern and world class treatment</p>
+            <a href="" style="color: rgb(3, 182, 185); text-decoration: none; font-size: 20px; padding-left: 30px;">Know More <i class="fa-solid fa-greater-than" style="font-size: 15px;"></i></a>
+            </div>
+          </div>
+          <div class="card2">
+            <div class="cdimg2">
+            <img src="./care-hospitals-treatments-3.webp" alt="">
+            </div>
+            <div class="cdcon2">
+            <h3 style="font-size: 25px; font-weight: 100; padding-left: 30px; padding-top: 20px;">Treatment Options</h3>
+            <p style="font-size: 20px; padding-left: 30px; padding-right: 15px; padding-top: 20px; padding-bottom: 30px;">We provide services in over 30+ medical Specialities with state-of-the-art infrastructure  <br> and highest standards of care</p>
+            <a href="" style="color: rgb(22, 162, 174); text-decoration: none; font-size: 20px; padding-left: 30px;">Know More <i class="fa-solid fa-greater-than" style="font-size: 15px;"></i></a>
+            </div>
+          </div>
+          <div class="card3">
+            <div class="cdimg3">
+            <img src="./care-hospitals-treatments-1.webp" alt="">
+            </div>
+            <div class="cdcon3">
+            <h3 style="font-size: 25px; font-weight: 100; padding-left: 30px; padding-top: 20px;">Accreditations</h3>
+            <p style="font-size: 20px; padding-left: 30px; padding-right: 15px; padding-top: 20px; padding-bottom: 30px;">Our highest standards of care, safe and hygiene practices reflected as our Awards and Accreditations.
+
+            </p>
+            <a href="" style="color: rgb(22, 162, 174); text-decoration: none; font-size: 20px; padding-left: 30px;">Know More <i class="fa-solid fa-greater-than" style="font-size: 15px;"></i></a>
+            </div>
+          </div>
+          </div>
+          </aside>
+          <h1 style="text-align: center; font-size: 45px; color: rgb(3, 3, 81); padding-top: 60px; padding-bottom: 25px; font-weight: 100;">Our Locations</h1>
+          <div class="po">
+            CARE Hospitals, a part of the Quality Care India Limited, brings international quality healthcare to serve patients across the world. With 17 healthcare facilities serving 7 cities across 6 states in India we are counted among the top 5 pan-Indian hospital chains.
+            </div>
+          <div class="navcon">
+          <div class="nav">
+            <a href="" style="background-color:rgb(22, 185, 190); color: aliceblue;">Hyderabad</a>
+            <a href="" style="padding:;">Raipur</a>
+            <a href="">Bhubaneswar</a>
+            <a href="">Visakhapatnam</a>
+            <a href="">Nagpur</a>
+            <a href="">Indore</a>
+            <a href="">Aurangabad</a>
+            <a href="">Clinics & Medical Centres</a>
+          </div>
+          </div>
+          <div style="text-align: center; font-size: 50px; padding-top:10px; color:rgb(5, 5, 82); padding-bottom: 30px;">Latest Blogs</div>
+          <div class="blogs" style="display: flex; justify-content: center; gap: 30px; width: 100%;"> 
+            <div class="bg1" style="border: 1px solid black; border: none; width: 45%; border-color:gray; background-color: white; height: 370px;">
+              <img src="./implantation_bleeding_vs_periods (1).webp" alt="" style="width: 683.5px; height: 250px;">
+              <p style="font-size: 25px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; color:rgb(5, 5, 82);">Implantation Bleeding Vs Periods: Know the difference</p>
+              <div style="font-size: 19px; padding-bottom: 10px; padding-left: 20px; color:rgb(5, 5, 82);">Woman often feel uncertain when they notice unexpected spotting or bleeding.A...</div>
+              <div style="color:rgb(22, 162, 174) ; font-size: 20px; padding-left: 20px; padding-bottom: 10px; padding-top:3px;" class="nmn"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+            </div>
+            <div class="bg2" style="width: 45%; height: 400px; display: flex; flex-direction: column; gap: 50px; ">
+              <div class="bg21" style="display: flex; gap: 20px; border: 1px solid grey; border: none; height: 40%; background-color: white;">
+                <div class="ig" style="width: 300px; height: 160px;">
+                  <img src="./cervical_cerclage_m_.webp" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div class="bgm">
+                  <div style="font-size: 25px; padding-bottom: 10px; padding-top: 10px; color:rgb(5, 5, 82);">Cervical Cerclage: Types, Procedures, Precautions and Risks</div>
+                  <p style="font-size: 19px; color:rgb(5, 5, 82);">For expectant mothers facing the risk of preterm birth, every medical advancement that can help carry a...</p>
+                  <div style="color:rgb(22, 162, 174) ; font-size: 20px; padding-top: 10px;" class="nmn"><i class="fa-solid fa-circle-arrow-right" ></i>Read More</div>
+                </div>
+              </div>
+              <div class="bg3" style="display: flex; gap: 20px; border: 1px solid grey; border: none; height: 40%; background-color: white;">
+                <div class="ig" style="width: 300px; height: 160px;">
+                  <img src="./itching_during_dengue_m_.webp" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <div class="bgm">
+                  <div style="font-size: 25px; padding-bottom: px; padding-top: 10px; color:rgb(5, 5, 82);">Itching During Dengue: Causes, Treatment and Home Remedies</div>
+                  <p style="font-size: 19px; color:rgb(5, 5, 82); padding-top: 10px;">Itching during dengue fever affects many patients and can cause significant discomfort during both the active</p>
+                  <div style="color:rgb(22, 162, 174) ; font-size: 20px; padding-top: 10px;" class="nmn"><i class="fa-solid fa-circle-arrow-right" ></i>Read More</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg4" style="width: 100%; display: flex; justify-content: center; gap:30px;">
+            <div class="bg21" style="display: flex; gap: 20px; border: 1px solid grey; border: none; width: 45%; height: 40%; background-color: white;">
+              <div class="ig" style="width: 300px; height: 160px;">
+                <img src="./bloating_during_ovulation_m_.webp" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="bgm">
+                <div style="font-size: 25px; padding-bottom: 10px; padding-top: 10px; color:rgb(5, 5, 82);">Bloating During Ovulation: Symptoms, Causes and Remedies</div>
+                <p style="font-size: 19px; color:rgb(5, 5, 82);">Many women experience an uncomfortable feeling of fullness in their abdomen during ovulation. This bloatin...</p>
+                <div style="color:rgb(22, 162, 174) ; font-size: 20px; padding-top: 10px;" class="nmn"><i class="fa-solid fa-circle-arrow-right" ></i>Read More</div>
+              </div>
+            </div>
+            <div class="bg5" style="display: flex; gap: 20px; border: 1px solid grey; border: none; height: 40%; width: 45%; background-color:white;">
+              <div class="ig" style="width: 300px; height: 160px;">
+                <img src="./everything_to_know_about_erythrocyte_sedimentation_rate_esr_m_.webp" alt="" style="width: 100%; height: 100%;">
+              </div>
+              <div class="bgm">
+                <div style="font-size: 25px; padding-bottom: 10px; padding-top: 10px; color:rgb(5, 5, 82);">Everything to Know About Erythrocyte Sedimentation Rate (ESR)</div>
+                <p style="font-size: 19px; color:rgb(5, 5, 82);">In the field of medical diagnostics, the Erythrocyte Sedimentation Rate (ESR) test stands out as a simple ye...</p>
+                <div style="color:rgb(22, 162, 174) ; font-size: 20px; padding-top: 10px;" class="nmn"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+              </div>
+            </div>
+          </div>
+          <h1 style="font-size: 45px; font-weight: 100; text-align: center; padding-top: 60px; color:rgb(5, 5, 82);">Awards and Accreditations</h1>
+          <div style="font-size: 22px; text-align: center; padding-top: 25px; padding-bottom: 5px;  color: rgb(1, 1, 57);">CARE Hospitals is frequently recognized for its commitment to providing world-class healthcare & excellent patient services.          </div>
+       <div style="padding-top: 35px; display: flex; gap: 40px; justify-content: center;">
+        <div style="height: 350px; width: 400px; background-color: white;">
+          <div style="height: 200px; padding-top: 20px;">
+            <img src="./great-award.webp" alt="" style="height: 90%; padding-left: 30px;">
+            <div style="text-indent: px; font-size: 20px; padding-top: 40px; padding-left: 130px;">Best place to work</div>
+          </div>
+        </div>
+        <div style="height: 350px; width: 400px; background-color: white;">
+          <div style="height: 200px; padding-top: 20px;">
+            <img src="./epihc_new.webp" alt="" style="height: 100%; padding-left: 20px;">
+            <div style="text-indent: 20px; padding-right: 10px; padding-left: px; font-size: 20px; padding-top: 20px; line-height: 30px;">Member of Ethical Principles in Health Care <b style="font-weight: 100;  padding-left: 150px; ">(EPiHC) </b></div>
+          </div>
+        </div>
+        <div style="height: 350px; width: 400px; background-color: white;">
+          <div style="height: 200px; padding-top: 20px;">
+            <img src="./most_preferred_workplace.webp" alt="" style="height: 90%; padding-left: 30px;">
+            <div style="text-indent: px; font-size: 20px; padding-top: 20px; padding:40px 10px; line-height: 30px; text-align: center;">Most preferred Workplace For 2024-25 By 4th Edition of India Today's Esteemed Marksmen Daily</div>
+          </div>
+        </div>
+       </div>
+       <h1 style="font-size: 45px; text-align: center; padding-top: 60px; font-weight: 100;color:rgb(5, 5, 82);">Patient Experiences</h1>
+       <div style="font-size: 20px; text-align: center; padding-top: 20px; padding-bottom: 40px; color: rgb(1, 1, 57);">Our patients are our best advocates, hear the inspiring stories of their treatment journey with CARE Hospitals. </div>
+       <div style="display: flex; width: 100%; justify-content: center; gap: 40px;">
+        <div style="height: 350px; width:400px; background-color: white;" class="pe1">
+          <div style="height: 200px;">
+            <img src="./WhatsApp Image 2025-03-06 at 23.06.25_637ff6f9.jpg" alt="" width="400px">
+            <div style="font-size: 20px; padding-left: 20px; padding-right: 10px; padding-top: 40px; line-height: 25px;">Vascular Surgery | Patient Experience | CARE Hospitals </div>
+          </div>
+          </div>
+        <div style="height: 350px; width:400px; background-color: white;" class="pe1">
+          <div style="height: 200px;">
+            <img src="./spinal_exp.jpg" alt="" width="400px">
+            <div style="font-size: 20px; padding-left: 20px; padding-right: 10px; padding-top: 40px; line-height: 25px;">Spinal Pain Treatment | Patient Experienced| Dr.Atmaranjan Dash</div>
+          </div>
+          </div>
+        <div style="height: 350px; width:400px; background-color: white;" class="pe1">
+          <div style="height: 200px;">
+            <img src="./spinal_exp.jpg" alt="" width="400px">
+            <div style="font-size: 20px; padding-left: 20px; padding-right: 10px; padding-top: 40px; line-height: 25px;">Brain Tumour | Treatment Through BSKY | Patient Experience | Dr.Atmaranjan Dash </div>
+          </div>
+          </div>
+        </div>
+        
+       </div>
+   
+       </div>
+       <div style="display: flex; justify-content: center; gap: 400px; position: relative; bottom: 220px;" class="pb">
+        <img src="./patient-play-icon.svg" alt="">
+        <img src="./patient-play-icon.svg" alt="" >
+        <img src="./patient-play-icon.svg" alt="">
+      </div>
+          <h1 style="font-size: 45px; text-align: center; padding-bottom: 10px; padding-top: px; color:rgb(5, 5, 82); font-weight: 100;">News and Media</h1>
+          <div class="news" style="width: 100%; height:45vh; display: flex; flex-wrap: wrap; justify-content: space-evenly; padding-top: 20px; gap: 0px;">
+            <a href="" class="ns1" style="display: flex; width: 41%; gap: 50px; height: 100px; border: 1px solid red; border-color: rgb(226, 237, 247); background-color:white; padding:10px 15px">
+              <div class="nimg" style="width: 50%;">
+                              <img src="./andhra-prabha.webp" alt="">
+              </div>
+              <div class="m1">
+                <p style="font-size: 20px; padding-top: 10px;">CARE Institute of Digestive Diseases launched in Hyderabad News Coverage in AndhraPrabha</p>
+                <div class="dt" style="display: flex; justify-content: ; gap: 155px; width: 100%; font-size: 20px; padding-top: 20px; ">
+                  <div>1 May 2024</div>
+                  <div style="color:rgb(22, 162, 174) ;" class="nmm"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="ns1" style="display: flex; width: 41%; gap: 50px; height: 100px; padding-bottom: px; border: 1px solid red; border-color: rgb(226, 237, 247); background-color: white; padding: 10px 15px;">
+              <div class="nimg" style="width: 50%;">
+                              <img src="./ennadu.webp" alt="">
+              </div>
+              <div class="m1">
+                <p style="font-size: 20px; padding-top: 10px;">Diabetes Reversal in High BMI by CARE Hospital Doctors News Coverage in EEnadu</p>
+                <div class="dt" style="display: flex; justify-content: ; gap: 155px; width: 100%; font-size: 20px; padding-top: 20px;">
+                  <div>27 April 2024</div>
+                  <div style="color:rgb(22, 162, 174) ;" class="nmm"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="ns1" style="display: flex; width: 41%; gap: 50px; height: 100px; border: 1px solid red; border-color: rgb(226, 237, 247); background-color: white; padding: 10px 15px;">
+              <div class="nimg" style="width: 50%;">
+                              <img src="./hindi-milap.webp" alt="">
+              </div>
+              <div class="m1">
+                <p style="font-size: 20px; padding-top: 10px;">CARE Hospitals Banjara Hills Launches Diabetic Foot Clinic News Coverage in Hindi Milap on...</p>
+                <div class="dt" style="display: flex; justify-content: ; gap: 155px; width: 100%; font-size: 20px; padding-top: 20px;">
+                  <div>23 March 2024</div>
+                  <div style="color:rgb(22, 162, 174) ;" class="nmm"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="ns1" style="display: flex; width: 41%; height: 100px; gap: 50px; border: 1px solid red; border-color: rgb(226, 237, 247); background-color: white; padding: 10px 15px;">
+              <div class="nimg" style="width: 50%;">
+                            <img src="./deccan-vision.webp" alt="">
+              </div>
+              <div class="m1">
+                <p style="font-size: 20px; padding-top: 10px;">CARE Hospitals Hitech City Organizes Fitness and Awareness Session on Hepatitis Day News...</p>
+                <div class="dt" style="display: flex; justify-content: ; gap: 155px; width: 100%; font-size: 20px; padding-top: 20px;">
+                  <div>29 July 2024</div>
+                  <div style="color:rgb(22, 162, 174) ;" class="nmm"><i class="fa-solid fa-circle-arrow-right"></i>Read More</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <h1 style="font-size: 45px; text-align: center; padding-top: 40px; padding-bottom: 40px; color: rgb(4, 4, 67); font-weight: 100;">Frequently Asked Questions</h1>
+          <div class="qs">
+          <div class="ques">
+            <div class="q1">
+              <div class="q1m" onclick="fun1(this)"><div style="display: flex; justify-content: space-between; cursor: pointer;"><b style="font-weight: 100;">How many CARE Hospitals are there in India?</b><div class="r1"><i class="fa-solid fa-chevron-down" style="position: relative; left: 5px; "></i></div></div> 
+                <div  class="qm1"><p>CARE Hospitals is a prominent healthcare oranization with a network of 17 healthcare facilities.As one of the largest hospital chains in India,CARE Hospitals offers a wide range of mediacal services across various specialities</u>  </p></div>
+              </div>
+            </div>
+            <div class="q2">
+              <div class="q2m" onclick="fun2(this)"><div style="display: flex; justify-content: space-between; cursor: pointer;"><b style="font-weight: 100;">Why CARE Hospitals are considered as best hospitals in India? </b><div class="r2"><i class="fa-solid fa-chevron-down"></i></div></div>
+                <div class="qm2"><p style="padding-bottom: 20px;">CARE Hospitals Group is a multi-speciality healthcare provider in India. CARE Hospitals delivers comprehensive care in over 30 clinical specialties, such as Cardiac Sciences, Oncology, Neurosciences, Renal Sciences, Gastroenterology & Hepatology, Orthopaedics & Joint Replacement, ENT, Vascular Surgery, Emergency & Trauma, and Integrated Organ Transplants to name a few.</u>
+                </p><p>CARE Group of Hospitals are well equipped with advanced facilities and modern infrastructure and with the most experienced and skilled doctors.With its state-of-the- art infrastructure, the internationally-certified team of eminent doctors, and a caring environment, CARE Hospitals Group is one of the best and preferred healthcare destinations in India.</u></p></div>
+              </div>
+            </div>
+            <div class="q3">
+              <div class="q3m" onclick="fun3(this)"><div style="display: flex; justify-content: space-between;  cursor: pointer;"><b style="font-weight: 100;">Which is the best multi-speciality Hospital chain in Hyderabad, India </b><div class="r3"><i class="fa-solid fa-chevron-down"></i></div></div>
+                <div class="qm3"><p style="padding-bottom: 20px;">The CARE Hospitals Group has 7 hospitals in Hyderabad and is one of the best multi-speciality hospital chains in Hyderabad. Our hospitals provide services in over 30 medical specialities like cardiology, neurology, cardiac surgery, urology, nephrology, gastroenterology, pulmonology, gynaecology, neurosurgery, renal transplant, <br> heart transplant, orthopaedics, paediatrics etc..
+
+                </p><p>With a multi-disciplinary team of eminent doctors and care providers, our hospitals in Hyderabad provide sophisticated treatment plans for our patients and are <br> considered among the best multi-speciality hospital chains in Hyderabad.</p></div>
+
+              </div>
+            </div>
+            <div class="q4">
+              <div class="q4m" onclick="fun4(this)"><div style="display: flex; justify-content: space-between; cursor: pointer;"><b style="font-weight: 100;">Which is the best hospital in Hyderabad</b><div class="r4"><i class="fa-solid fa-chevron-down"></i></div></div>
+                <div class="qm4"><p>Established in 1997, CARE Hospitals is considered as the best hospital in Hyderabad with 7 state-of-the-art hospitals serving patients in and around Hyderabad, Telangana. Our hospitals are equipped with modern technology and infrastructure. A Multi-disciplinary team of doctors provides effective and personalized treatment plans based on individual needs.</p></div>
+
+              </div>
+            </div>
+            <div class="q5">
+              <div class="q5m" onclick="fun5(this)"><div style="display: flex; justify-content: space-between;  cursor: pointer;"><b style="font-weight: 100;">Do all CARE Hospitals provide International Patient services?</b><div class="r5"><i class="fa-solid fa-chevron-down"></i> </div></div>
+                <div class="qm5"><p style="padding-bottom: 20px;">CARE Hospitals flagship centres for international patients are located in Hyderabad and Bhubaneswar, the leading destinations for healthcare in the world.
+                </p><p style="padding-bottom: 20px;">CARE International Patient Program offers a wide range of services to the patients visiting the hospital from locations outside India. Combining excellent clinical expertise with the latest technology and cost-effective services, the program addresses the diverse needs of international patients. Right from the time they arrive at the airport, our International Patient Team ensures a comfortable stay, convenient services, and a world-class treatment experience.</u>
+
+                </p><p>We use the best and the latest technology to adapt to the changing healthcare needs and bring patients an experience of the highest possible degree in medical care. Our focus is on improving the healthcare system of the country, elevating CARE Hospitals head and shoulder above others, and establishing India as the preferred <br>destination for healthcare needs.</p></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="ddd" style="height: 1vh; background: url(./1.webp); padding-bottom: px;">
+
+          </div>
+
+          <div class="add">
+            <div style="display: flex; flex-direction: column; gap: 6px; position: relative; top: 25px;"> <div style="font-size: 22px; padding-bottom: 30px; text-decoration: none;">Registered Office </div>
+                <span>Quality CARE India Limited</span>
+                <span>#6-3-248/2, Road No.1,</span>
+                <span>Banjara Hills, Hyderabad-500034,                </span>
+                <span>Telangana, India.                </span>
+                <span>CIN: U85110TG1992PLC014728                </span>
+                <span>+91-40-68106529                </span>
+                <span>Doctor Enquiry: +91-40-68106529</span>
+                <span style="display: flex; gap: 20px; font-size: 35px; padding-top: 15px;"><a href="https://www.youtube.com/c/CAREHospitalsIndia"><i class="fa-brands fa-youtube" style="color: red;"></i></a><a href="https://www.facebook.com/carehospitalsindia"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                  <a href="https://www.instagram.com/care.hospitals/"><i class="fa-brands fa-instagram" style="color: darkmagenta;"></i></a>  <a href="https://www.linkedin.com/company/care-quality-care-india-limited" style="color: white;"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></span>
+            </div>
+            <hr style="border-color:white;width: 1px; color: white; background-color: white; position: relative; right: 30px; top: 25px; height: 90%; border: none;">
+            <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 100px; top: 25px;"> <div style="font-size: 23px; padding-bottom: px;">Know Us</div> <hr style="width: 37%; border-color: black; position: relative; bottom: 12px;">
+              <span>Hospitals & Directions</span>
+              <span>Specialities & Treatments</span>
+              <span>Our Doctors</span>
+              <span>International Patient Services</span>
+              <span>News & Media</span>
+              <span>About Us</span>
+              <span>Awards</span>
+              <span>Careers</span>
+              <span><b style="text-decoration: underline;">TARIFF</b></span>
+              <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67); background-color: white; position: relative; top: 2px; border-radius: 5px; font-size: 15px;">Stent Pricing</button></span> 
+              <button style="position: relative; left:110px; bottom: 45px; padding: 10px 3px; border: none; color: rgb(4, 4, 67); background-color:white; width: 45%; border-radius: 5px; font-size: 15px;">Implant Pricing</button>
+              <span><b style="text-decoration: underline; position: relative; bottom: 40px;">ESG & Sustainability</b></span>
+              <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 40px;">ESG Materiality Survey              </button></span>
+              <span><b style="text-decoration: underline; position: relative; bottom: 30px;">EPIHC</b></span>
+              <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 30px;">Ethical Principles in Health Care              </button></span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 50px; top: 25px;"> <div style="font-size: 23px;">Actions </div> <hr style="width: 40%; border-color: black; position: relative; bottom: 12px;">
+                <span>Contact Us</span>
+                <span>Book an Appointment</span>
+                <span>Pay Online</span>
+                <span>Feedback</span>
+                <span>Lab Reports</span>
+                <span>Video Consultation</span>
+                <span>Stroke Risk Assessment</span>
+                <span>Blogs</span>
+                <span>Medical Information</span>
+                <span>Symptoms</span>
+                <span>Diagnostics</span>
+                <span>Diseases & Conditions</span>
+                <span>Surgery Cost</span>
+                <span>Animated Health Guide</span>
+                <span>Web Stories</span>
+                <span>Health Package</span>
+                <span>Second Opinion</span>
+                <span>Care Samvaad (Podcast)</span>
+              </div>
+            <div style="display: flex; flex-direction: column; gap: 12px;color: darkblue; position: relative; top: 25px;"><div style="font-size: 23px; padding-bottom: px;">Centres of Excellence</div> <hr style="width: 70%; border-color: black; position: relative; bottom: 10px;">
+              <a href="./cardic.html" style="text-decoration: none;">Cardiac Sciences</a>
+              <a href="./gastro.html" style="text-decoration: none;">Gastro Sciences</a>
+              <a href="./nephrology.html" style="text-decoration: none;">Nephrology</a>
+              <a href="./neuro.html" style="text-decoration: none;">Neurosciences</a>
+              <a href="./oncology.html" style="text-decoration: none;">Oncology</a>
+              <a href="./orthopeadics.html" style="text-decoration: none;">Orthopaedics</a>
+              <a href="./peadatrics.html" style="text-decoration: none;">Paediatrics</a>
+              <a href="./pulmonology.html" style="text-decoration: none;">Pulmonology</a>
+              <a href="./robot.html" style="text-decoration: none;">Robot-Assisted Surgery</a>
+              <a href="./transplant.html" style="text-decoration: none;">Transplants</a>
+              <a href="./urology.html" style="text-decoration: none;">Urology</a>
+              <a href="./vascular.html" style="text-decoration: none;">Vascular & Endovascular Surgery and <br> Interventional Radiology</a>
+              <a href="./woman.html" style="text-decoration: none;">Woman& Child Institute </a>
+            </div>
+        </div>
+            <div class="loc">
+              <div>Hyderabad</div>
+              <div>|</div>
+              <div>Raipur</div>
+              <div>|</div>
+              <div>Bhubaneswar</div>
+              <div>|</div>
+              <div>Visakhapatnam</div>
+              <div>|</div>
+              <div>Nagpur</div>
+              <div>|</div>
+              <div>Indore</div>
+              <div>|</div>
+              <div>Chh.Sambhajinagar</div>
+            </div>
+            <div class="footer">
+              <footer>Copyright © CARE Hospitals - All Rights Reserved</footer>
+              <footer>Feedback . Privacy policy . Grievance</footer>
+            </div>
+    </div>
+    <script>
+      let a=[{'img':'1.jpeg'},
+            {'img':'2.jpeg'},
+            {'img':'3.jpeg'},
+            {'img':'4.jpeg'}
+      ]
+      let imgr=document.getElementsByTagName("img")[1]
+      let ir=document.querySelectorAll(".dotcon i")
+      let conr=document.getElementsByClassName("submenu")[0]
+      let sr=document.getElementsByClassName("menu")[0]
+      let qr1=document.getElementsByClassName("q1m")[0]
+      let qrm1=document.getElementsByClassName("qm1")[0]
+      let qr2=document.getElementsByClassName("q2m")[0]
+      let qrm2=document.getElementsByClassName("qm2")[0]
+      let qr3=document.getElementsByClassName("q3m")[0]
+      let qrm3=document.getElementsByClassName("qm3")[0]
+      let qr4=document.getElementsByClassName("q4m")[0]
+      let qrm4=document.getElementsByClassName("qm4")[0]
+      let qr5=document.getElementsByClassName("q5m")[0]
+      let qrm5=document.getElementsByClassName("qm5")[0]
+      let ar=document.getElementsByClassName("a")[0]
+      let ri1=document.querySelectorAll(".r1 i")
+      let ri2=document.querySelectorAll(".r2 i")
+      let ri3=document.querySelectorAll(".r3 i")
+      let ri4=document.querySelectorAll(".r4 i")
+      let ri5=document.querySelectorAll(".r5 i")
+      let i=0
+      let set=(ind)=>{
+        ir[i].style.color='white'
+        ir[i].className='fa-solid fa-square-full'
+        i=ind
+        imgr.src=a[i].img
+        ir[i].style.color='darkblue'
+          ir[i].className='fa-solid fa-square-full'
+          
+       
+        }
+        // setInterval(set,1000)
+      let fun=(e)=>{
+        sr=e
+        if(conr.style.display=="none"){
+          conr.style.display="flex";
+        }
+        else{
+          conr.style.display="none";
+        }
+      }
+      let fun1=(e)=>{
+        qr1=e
+        if(qrm1.style.display=="none")
+      {
+        qrm1.style.display="flex";
+        ri1[i].className='fa-solid fa-chevron-up'
+      
+        
+      }
+      else
+      {
+        qrm1.style.display="none";
+          ri1[i].className='fa-solid fa-chevron-down'
+      }
+      }
+      let fun2=(e)=>{
+        qr2=e
+        if(qrm2.style.display=="none")
+      {
+        
+        qrm2.style.display="flex";
+        ri2[i].className='fa-solid fa-chevron-up'
+        
+      }
+      else
+      {
+        qrm2.style.display="none";
+         ri2[i].className='fa-solid fa-chevron-down'
+      }
+      }
+      let fun3=(e)=>{
+        qr3=e
+        if(qrm3.style.display=="none")
+      {
+        qrm3.style.display="flex";
+        ri3[i].classList='fa-solid fa-chevron-up'
+      }
+      else
+      {
+        qrm3.style.display="none";
+         ri3[i].classList='fa-solid fa-chevron-down'
+      }
+      }
+      let fun4=(e)=>{
+        qr4=e
+        if(qrm4.style.display=="none")
+      {
+        qrm4.style.display="flex";
+        ri4[i].classList='fa-solid fa-chevron-up'
+      }
+      else
+      {
+        qrm4.style.display="none";
+         ri4[i].classList='fa-solid fa-chevron-down'
+      }
+      }
+      let fun5=(e)=>{
+        qr5=e
+        if(qrm5.style.display=="none")
+      {
+        qrm5.style.display="flex";
+        ri5[i].classList='fa-solid fa-chevron-up'
+        
+      }
+      else
+      {
+        qrm5.style.display="none";
+         ri5[i].classList='fa-solid fa-chevron-down'
+      }
+      }
+      let fun6=(e)=>{
+        alert("Open Pick an App")
+      }
+    </script>
+</body>
+</html>

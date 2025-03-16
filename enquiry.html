@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Enquiry | CARE Hospitals</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+  body{
+    background-color: rgb(246, 245, 245); 
+    
+  }
+  nav{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    background-color:rgb(3, 182, 185);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    color: rgb(198, 213, 225);
+    position: sticky;
+    top: 0px;
+    
+  }
+  nav a{
+    text-decoration: none;
+    color:aliceblue ;
+  }
+  nav a:hover{
+   
+    text-decoration: underline;
+  }
+
+  .c{
+    width: 6%;
+  }
+  .con1{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    align-items: center;
+    position:sticky;
+    top: 35px;
+    background-color: white;
+  }
+
+  .img{
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+  }
+  .img img{
+    width: 100%;
+    height: 140%;
+  }
+  .mat{
+    width: 60%;
+    height: 5px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color:rgb(5, 5, 100);
+  }
+  .logo{
+    display: flex;
+    width: 25%;
+    gap: 10px;
+    padding-left: 80px;
+    padding-top: 15px; 
+    height: 15vh;
+    top: 20px;
+  }
+  header{
+    height: 113vh;
+    /* background-color: rgb(243, 243, 243); */
+  }
+  .loc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: px;
+    color: rgb(5, 5, 100);
+    background-color: white;
+   }
+   .footer{
+    height: 12vh;
+    background-color: rgb(222, 220, 220);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 19.4px;
+    gap: 500px;
+    color:rgb(3, 3, 81);
+   }
+   .footer footer{
+    padding-top: 25px;
+   }
+     .add{
+    display: flex;
+     justify-content: center;
+     gap: 100px; 
+     height: 83vh;
+      padding-top: 30px; 
+      font-size: 18px; 
+      background-color:rgb(221, 220, 220);
+      
+   }
+   .add div , a{
+    color:rgb(3, 3, 73);
+   }
+
+</style>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./international.html">International Patients</a>
+          <a href="./payment.html">Pay Online</a>
+          <a href="" onclick="fun()" class="menu">Online Lab Reports
+            <!-- <div class="submenu">
+            <span>Banjara Hills,Hyderbad</span>
+            <span>OPD Banjara Hills,Hyderbad</span>
+            <span>HITEC City, Hyderabad</span>
+            <span>OPD HITEC City, Hyderabad</span>
+            <span>Musheerabad, Hyderabad</span>
+            <span>Nampally, Hyderabad</span>
+            <span>Malakpet, Hyderabad</span>
+            <span>Bhubaneswar</span>
+            <span>Raipur</span>
+            <span>Health City, Visakhapatnam</span>
+            <span>ramnagar, Visakhapatnam</span>
+            <span>Nagpur</span>
+            <span>Indore</span>
+            <span>Chh. Sambhajinagar</span>
+            <span>CARE multi-speciality Clinic,Srinagar Colony</span>
+            <span>CARE Medical Center,Tolichowi,Hyderabad</span>
+            </div> -->
+          </a>
+          <a href="./career.html">Careers</a>
+          <a href="./enquiry.html">Enquiry Now</a>
+          <a href="./feedback.html">Feedback</a>
+          <a href=""><i class="fa-solid fa-phone"></i>+91-40 6165 6565</a>
+          <select name="" id="" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+              <option value="">English</option>
+              <option value="">Bengali</option>
+              <option value="">Hindi</option>
+              <option value="">Kannada</option>
+              <option value="">Marati</option>
+              <option value="">Tamil</option>
+              <option value="">Telugu</option>
+              <option value="">Arabic</option>
+              <option value="">Somali</option>
+              <option value="">Malayalam</option>
+              <option value="">Urdu</option>
+          </select>
+          <select name="" id="" class="c" style="border: 1px solid black; background-color: whitesmoke; padding: 5px 5px; font-size: 14px; border: none;">
+              <option value="" selected>Hospitals</option>
+              <option value="">CARE Hospital,Banjara Hills,Hyderabad</option>
+              <option value="">CARE Hospital Outpatient Center,Banjara Hills,Hyderabad</option>
+              <option value="">CARE Hospital,Hitech City,Hyderabad</option>
+              <option value="">CARE Hospital Outpatient Center,Hitech City,Hyderabad</option>
+              <option value="">Gurunanak CARE Hospitals</option>
+              <option value="">CARE Hospitals, Nampally, Hyderabad                </option>
+              <option value="">CARE Hospitals, Malakpet, Hyderabad         </option>
+              <option value="">CARE Hospitals, Bhubaneswar                </option>
+              <option value="">Ramkrishna CARE Hospitals, Raipur                </option>
+              <option value="">CARE Hospitals, Ramnagar, Visakhapatnam                </option>
+              <option value="">CARE Hospitals, Health City, Arilova                </option>
+              <option value="">Ganga CARE Hospital Limited, Nagpur                </option>
+              <option value="">CARE CHL Hospitals, Indore                </option>
+              <option value="">CARE CIIGMA Hospitals, Chh. Sambhajinagar</option>
+          </select>
+
+      </nav>
+      <head>
+          <div class="con1">
+              <div class="img">
+                  <a href="./index.html"><img src="./cares-logo.webp" alt=""></a>
+              </div>
+              <div class="mat">
+                <div style="font-size: 19px; display: flex; gap: 10px;">
+                  <div><i class="fa-solid fa-user-doctor"></i></div>
+                    <div>Doctors</div>
+                  </div>
+                  <div style="font-size: 19px; display: flex; align-items: center; justify-content: center; gap: 10px;" >
+                <div><i class="fa-solid fa-stethoscope" ></i></div>
+                 <div> Specialities& <br> Treatments</div>
+                 </div>
+                  <div  style="font-size: 19px; display: flex; align-items: center; gap: 10px; justify-content: center;  ">
+                    <div><i class="fa-regular fa-hospital"></i></div>
+                     <div class="m1">Hospitals& <br> Directions</div>
+                     </div>
+                  <div style="font-size: 19px; display: flex; gap: 10px; align-items: center; border: 1px solid red; padding: 5px 10px; background-color: rgb(6, 6, 106); color: white; border: none; border-radius: 5px;">
+                    <div><i class="fa-solid fa-calendar-days" ></i></div>
+                     <div>Book an <br> Appointment</div>
+                     </div>
+                  <div style="font-size: 19px; display: flex; gap: 10px;">
+                    <div><i class="fa-solid fa-address-book"></i></div>
+                    <div>Contact Us</div>
+                    </div>
+              </div>
+          </div>
+      </head>
+      
+      <header>
+      <div class="logo">
+        <a href="./index.html"><i class="fa-solid fa-house" style="color: darkblue;"></i></a>
+        <div>|</div>
+        <div style="color:grey; font-size: 20px;">Enquiry</div>
+        </div>
+        
+        <div style="text-align: center; font-size: 45px; color: rgb(10, 10, 98); position: relative; bottom: 25px;">Enquiry Form</div>
+        <p style="padding: 10px 120px; font-size: 22px; text-align: center;   color:rgb(1, 1, 57); padding-bottom: 50px; line-height: 30px;">With state-of-the-art facilities and a team of experienced healthcare professionals CARE Hospitals are dedicated to delivering comprehensive and compassionate care to patients. Fill in the below details to enquire about treatment, services, and facilities available.        </p>
+        <div style="display: flex; justify-content: center;  gap: 00px;">
+            <div style="position: relative; right: 403px; bottom: 5px; font-size: 20px;">Name*</div>
+            <div style="position: relative; left: 30px; bottom: 5px; font-size: 20px;">Email Id*</div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 30px;">
+            <input type="text" style="width: 30%; height: 35px; border-radius: 5px; border-color: lightslategray; border-width: 1px;">
+            <input type="text" style="width: 30%; height: 35px; border-radius: 5px; border-color: lightslategray; border-width: 1px;"> 
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div style="position: relative; top: 25px; right: 383px; font-size: 20px;">Location*</div>
+            <div style="position: relative; top: 25px; font-size: 20px; left: 25px;">Speciality*</div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 30px;">
+            <select name="" id="" style="width: 30%; height: 40px; position: relative; top: 30px; font-size: 20px; border-radius: 5px; left: 0.1px;border-color: lightslategray; border-width: 1px;">
+                <option value="">--Select Hospital--</option>
+                <option value="">CARE Hospital,Banjara Hills,Hyderabad</option>
+                <option value="">CARE Hospital Outpatient Center,Banjara Hills,Hyderabad</option>
+                <option value="">CARE Hospital,Hitech City,Hyderabad</option>
+                <option value="">CARE Hospital Outpatient Center,Hitech City,Hyderabad</option>
+                <option value="">Gurunanak CARE Hospitals</option>
+                <option value="">CARE Hospitals, Nampally, Hyderabad                </option>
+                <option value="">CARE Hospitals, Malakpet, Hyderabad         </option>
+                <option value="">CARE Hospitals, Bhubaneswar                </option>
+                <option value="">Ramkrishna CARE Hospitals, Raipur                </option>
+                <option value="">CARE Hospitals, Ramnagar, Visakhapatnam                </option>
+                <option value="">CARE Hospitals, Health City, Arilova                </option>
+                <option value="">Ganga CARE Hospital Limited, Nagpur                </option>
+                <option value="">CARE CHL Hospitals, Indore                </option>
+                <option value="">CARE CIIGMA Hospitals, Chh. Sambhajinagar</option>
+            </select>
+            <select name="" id="" style="width: 30%; height: 40px; border-radius: 5px; position: relative; left:3px; top: 30px; font-size: 20px;border-color: lightslategray; border-width: 1px;" >
+                <option value="">--Select Speciality</option>
+                <option value="">Anaesthesiology</option>
+                <option value="">Arthroscopy & Sports Medicine</option>
+                <option value="">Cardiac Surgery</option>
+                <option value="">Cardiology</option>
+                <option value="">Critical Care Medicine</option>
+                <option value="">Dentistry</option>
+                <option value="">Dermatology</option>
+                <option value="">Dietetics & Nutrition</option>
+                <option value="">Emergency Medicine</option>
+                <option value="">Endocrinology</option>
+                <option value="">ENT</option>
+                <option value="">Gastroenterology-Surgical</option>
+                <option value="">Gastroenterology Medicine</option>
+                <option value="">General Medicine/Internal Medicine</option>
+                <option value="">General Surgery</option>
+                <option value="">Geriatrics</option>
+                <option value="">Haematology</option>
+                
+            </select>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <div style="position: relative; top: 70px; right: 370px; font-size: 20px;">Query*</div>
+            <div style="position: relative; top: 70px; left: 60px; font-size: 20px;">Contact Number*</div>
+        </div>
+        <div style="display: flex; justify-content: center; position: relative; top: 75px; gap: 30px;">
+            <textarea name="" id="" rows="7" cols="60" style="position: relative; right: px;border-color: lightslategray; border-width: 1px; border-radius: 5px;"></textarea>
+            <input type="text" style="width: 30%; height: 40px; position: relative; left: px;border-color: lightslategray; border-width: 1px; border-radius: 5px;" >
+        </div>
+        <div style="position: absolute; top: 750px; left: 290px; display: flex; gap: 10px; font-size: 20px; align-items: center;"><i class="fa-solid fa-square-check" style="color: rgb(51, 16, 224)"></i><u style="font-size: 14px; text-decoration: none;">I agree with the Terms & Conditions and Privacy Policy of CARE Hospital’s website.</u></div>
+        <footer style="font-size: 14px; position: absolute; top: 780px; left: 290px; font-style: italic;">* By submitting this form, you consent to receive communication from CARE Hospitals via call, WhatsApp, email, and SMS.</footer>
+        <div style="text-align: center; position: relative; top: 175px;">
+            <button style="padding: 10px 40px; border: none; background-color: rgb(22, 162, 174); color: white; font-size: 18px;">SUBMIT</button>
+        </div>
+        </header>
+        <div class="mm" style="height: 1vh; background: url(/1.webp);">
+
+        </div>
+
+        <div class="add">
+          <div style="display: flex; flex-direction: column; gap: 6px; position: relative; top: 25px;"> <div style="font-size: 22px; padding-bottom: 30px; text-decoration: none;">Registered Office </div>
+              <span>Quality CARE India Limited</span>
+              <span>#6-3-248/2, Road No.1,</span>
+              <span>Banjara Hills, Hyderabad-500034,                </span>
+              <span>Telangana, India.                </span>
+              <span>CIN: U85110TG1992PLC014728                </span>
+              <span>+91-40-68106529                </span>
+              <span>Doctor Enquiry: +91-40-68106529</span>
+              <span style="display: flex; gap: 20px; font-size: 35px; padding-top: 15px;"><a href="https://www.youtube.com/c/CAREHospitalsIndia"><i class="fa-brands fa-youtube" style="color: red;"></i></a><a href="https://www.facebook.com/carehospitalsindia"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                <a href="https://www.instagram.com/care.hospitals/"><i class="fa-brands fa-instagram" style="color: darkmagenta;"></i></a>  <a href="https://www.linkedin.com/company/care-quality-care-india-limited" style="color: white;"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></span>
+          </div>
+          <hr style="border-color:white;width: 1px; color: white; background-color: white; position: relative; right: 30px; top: 25px; height: 90%; border: none;">
+          <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 100px; top: 25px;"> <div style="font-size: 23px; padding-bottom: px;">Know Us</div> <hr style="width: 37%; border-color: black; position: relative; bottom: 12px;">
+            <span>Hospitals & Directions</span>
+            <span>Specialities & Treatments</span>
+            <span>Our Doctors</span>
+            <span>International Patient Services</span>
+            <span>News & Media</span>
+            <span>About Us</span>
+            <span>Awards</span>
+            <span>Careers</span>
+            <span><b style="text-decoration: underline;">TARIFF</b></span>
+            <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67); background-color: white; position: relative; top: 2px; border-radius: 5px; font-size: 15px;">Stent Pricing</button></span> 
+            <button style="position: relative; left:110px; bottom: 45px; padding: 10px 3px; border: none; color: rgb(4, 4, 67); background-color:white; width: 45%; border-radius: 5px; font-size: 15px;">Implant Pricing</button>
+            <span><b style="text-decoration: underline; position: relative; bottom: 40px;">ESG & Sustainability</b></span>
+            <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 40px;">ESG Materiality Survey              </button></span>
+            <span><b style="text-decoration: underline; position: relative; bottom: 30px;">EPIHC</b></span>
+            <span><button style="padding: 10px 10px; border: none; color: rgb(4, 4, 67);; background-color: white; border-radius: 5px; font-size: 15px; position: relative; bottom: 30px;">Ethical Principles in Health Care              </button></span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; position: relative; right: 50px; top: 25px;"> <div style="font-size: 23px;">Actions </div> <hr style="width: 40%; border-color: black; position: relative; bottom: 12px;">
+              <span>Contact Us</span>
+              <span>Book an Appointment</span>
+              <span>Pay Online</span>
+              <span>Feedback</span>
+              <span>Lab Reports</span>
+              <span>Video Consultation</span>
+              <span>Stroke Risk Assessment</span>
+              <span>Blogs</span>
+              <span>Medical Information</span>
+              <span>Symptoms</span>
+              <span>Diagnostics</span>
+              <span>Diseases & Conditions</span>
+              <span>Surgery Cost</span>
+              <span>Animated Health Guide</span>
+              <span>Web Stories</span>
+              <span>Health Package</span>
+              <span>Second Opinion</span>
+              <span>Care Samvaad (Podcast)</span>
+            </div>
+          <div style="display: flex; flex-direction: column; gap: 12px;color: darkblue; position: relative; top: 25px;"><div style="font-size: 23px; padding-bottom: px;">Centres of Excellence</div> <hr style="width: 70%; border-color: black; position: relative; bottom: 10px;">
+            <a href="./cardic.html" style="text-decoration: none;">Cardiac Sciences</a>
+            <a href="./gastro.html" style="text-decoration: none;">Gastro Sciences</a>
+            <a href="./nephrology.html" style="text-decoration: none;">Nephrology</a>
+            <a href="./neuro.html" style="text-decoration: none;">Neurosciences</a>
+            <a href="./oncology.html" style="text-decoration: none;">Oncology</a>
+            <a href="./orthopeadics.html" style="text-decoration: none;">Orthopaedics</a>
+            <a href="./peadatrics.html" style="text-decoration: none;">Paediatrics</a>
+            <a href="./pulmonology.html" style="text-decoration: none;">Pulmonology</a>
+            <a href="./robot.html" style="text-decoration: none;">Robot-Assisted Surgery</a>
+            <a href="./transplant.html" style="text-decoration: none;">Transplants</a>
+            <a href="./urology.html" style="text-decoration: none;">Urology</a>
+            <a href="./vascular.html" style="text-decoration: none;">Vascular & Endovascular Surgery and <br> Interventional Radiology</a>
+            <a href="./woman.html" style="text-decoration: none;">Woman& Child Institute </a>
+          </div>
+      </div>
+  
+         <div class="loc">
+              <div>Hyderabad</div>
+              <div>|</div>
+              <div>Raipur</div>
+              <div>|</div>
+              <div>Bhubaneswar</div>
+              <div>|</div>
+              <div>Visakhapatnam</div>
+              <div>|</div>
+              <div>Nagpur</div>
+              <div>|</div>
+              <div>Indore</div>
+              <div>|</div>
+              <div>Chh.Sambhajinagar</div>
+            </div>
+            <div class="footer">
+              <footer>Copyright © CARE Hospitals - All Rights Reserved</footer>
+              <footer>Feedback . Privacy policy . Grievance</footer>
+            </div>
+</body>
+</html>
